@@ -1,0 +1,50 @@
+1614200523a:1:{s:10:"search.htm";a:12:{s:8:"fileName";s:10:"search.htm";s:7:"content";s:937:"title = "Search"
+url = "/search"
+layout = "static-layout"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[searchResults]
+resultsPerPage = 10
+showProviderBadge = 1
+noResultsMessage = "К сожалению, по вашему запросу ничего не найдено."
+visitPageMessage = "Перейти"
+==
+<div class="search-results">
+  <div class="container">
+    {% set results = searchResults.results %}
+
+    {% for result in results %}
+    {# Display all results #}
+    {% partial searchResults ~ '::searchresult.htm' result = result %}
+    {% else %}
+    {# No results found #}
+    {% partial searchResults ~ '::no-results.htm' %}
+    {% endfor %}
+
+    {% partial searchResults ~ '::pagination.htm' results = results %}
+
+    <div class="btn-wrapper align-self-center">
+      <a class="btn btn-custom-primary" href="/">Главная страница</a>
+    </div>
+  </div>
+</div>";s:5:"mtime";i:1614192519;s:6:"markup";s:597:"<div class="search-results">
+  <div class="container">
+    {% set results = searchResults.results %}
+
+    {% for result in results %}
+    {# Display all results #}
+    {% partial searchResults ~ '::searchresult.htm' result = result %}
+    {% else %}
+    {# No results found #}
+    {% partial searchResults ~ '::no-results.htm' %}
+    {% endfor %}
+
+    {% partial searchResults ~ '::pagination.htm' results = results %}
+
+    <div class="btn-wrapper align-self-center">
+      <a class="btn btn-custom-primary" href="/">Главная страница</a>
+    </div>
+  </div>
+</div>";s:4:"code";N;s:5:"title";s:6:"Search";s:3:"url";s:7:"/search";s:6:"layout";s:13:"static-layout";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:13:"searchResults";a:4:{s:14:"resultsPerPage";s:2:"10";s:17:"showProviderBadge";s:1:"1";s:16:"noResultsMessage";s:89:"К сожалению, по вашему запросу ничего не найдено.";s:16:"visitPageMessage";s:14:"Перейти";}}}

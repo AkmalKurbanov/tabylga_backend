@@ -1,0 +1,10 @@
+1614200523a:1:{s:23:"o-partii-idealogiya.htm";a:7:{s:8:"fileName";s:23:"o-partii-idealogiya.htm";s:7:"content";s:202:"[viewBag]
+title = "Идеалогия"
+url = "/o-partii/idealogiya"
+layout = "static-layout"
+is_hidden = 0
+navigation_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+==
+<p>asdsdsas</p>";s:5:"mtime";i:1614156466;s:6:"markup";s:15:"<p>asdsdsas</p>";s:4:"code";N;s:7:"viewBag";a:7:{s:5:"title";s:18:"Идеалогия";s:3:"url";s:20:"/o-partii/idealogiya";s:6:"layout";s:13:"static-layout";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";}s:12:"parsedMarkup";s:15:"<p>asdsdsas</p>";}}

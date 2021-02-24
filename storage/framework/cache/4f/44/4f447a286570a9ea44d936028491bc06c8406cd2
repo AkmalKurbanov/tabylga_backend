@@ -1,0 +1,57 @@
+1614200523a:1:{s:17:"useful-links.yaml";a:7:{s:8:"fileName";s:17:"useful-links.yaml";s:7:"content";s:1138:"items:
+    -
+        title: Главная
+        type: cms-page
+        code: ''
+        reference: home
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Donate
+        type: url
+        url: '#'
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Manifesto
+        type: url
+        url: '#'
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Members
+        type: url
+        url: '#'
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Call To Action'
+        type: url
+        url: '#'
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Volunteer
+        type: url
+        url: '#'
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Полезные ссылки'
+";s:5:"mtime";i:1614079271;s:6:"markup";N;s:4:"code";N;s:4:"name";N;s:5:"items";a:0:{}}}

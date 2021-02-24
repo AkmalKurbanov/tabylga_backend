@@ -1,0 +1,73 @@
+name: Tabylga
+author: Акмаль
+description: 'We believe brand interaction is key in commu- nication. Real inno vations and a positive customer experience are the heart of successful commu- nication.'
+code: ''
+form:
+  fields:
+    site_name: 
+      label: Имя сайта
+      placeholder: Tabylga
+      size: small
+      span: left
+    site_description: 
+      label: Краткое описание сайта
+      placeholder: Девиз партии и ли что-то в этом роде.
+      type: richeditor 
+      size: small
+      span: right
+    contacts:
+      type: repeater
+      label: Контакты
+      form:
+        fields:
+          address: 
+            label: Адрес
+            placeholder: Кыргызстан, г.Каракол, ул. Ж.Жусаева (Горького) 87
+          phone1: 
+            label: Телефон  
+            placeholder: 550 999 999
+          phone2: 
+            label: Телефон второй, если имеется
+            placeholder: 550 999 999  
+          user_email1:
+            label: Email адрес
+            type: email
+            placeholder: email@tabylga.com
+          user_email2:
+            label: Втрая Email почта, если имеется 
+            type: email
+            placeholder: email@tabylga.com         
+    logoHeader:
+      label: Логотип в шапке сайта 
+      type: fileupload
+      mode: image
+      span: left
+    logoFooter:
+      label: Логотип в подвале сайта
+      type: fileupload
+      mode: image
+      span: right
+    social:
+      type: repeater
+      label: Социальные сети
+      titleFrom: name  
+      form:
+        fields:
+          awesome_icon:
+            label: Социальная сеть ( Иконка )
+            type: awesomeiconslist
+            unicodeValue: false
+            emptyOption: false
+            iconTypes: brands
+            placeholder: Выбрать иконку
+            span: left 
+          url:
+            label: Ссылка социальной сети
+            type: text
+            placeholder: https://www.instagram.com/
+            span: right 
+          social_name:
+            label: Название социальной сети
+            type: text
+            placeholder: Facebook
+            span: left 

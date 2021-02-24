@@ -1,0 +1,78 @@
+1614200523a:1:{s:15:"site/header.htm";a:7:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1438:"[viewBag]
+
+[staticMenu]
+code = "menu-header"
+==
+<!-- navbar start -->
+<div class="politix-navbar">
+  <nav class="navbar navbar-area navbar-expand-lg nav-style-02">
+    <div class="container nav-container">
+      <div class="responsive-mobile-menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#billatrail_main_menu"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </button>
+      </div>
+      <div class="logo">
+        <a href="index.html"> <img src="{{this.theme.logoHeader.path}}" alt="logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="billatrail_main_menu">
+        {% if staticMenu.menuItems %}
+        <ul class="navbar-nav menu-open">
+          {% partial staticMenu ~ "::items" items=staticMenu.menuItems %}
+        </ul>
+        {% endif %}
+      </div>
+      <div class="nav-right-part">
+        <ul>
+          <li class="search" id="search">
+            <a href="#"><i class="fa fa-search"></i></a>
+          </li>
+          <li class="menubar d-none d-lg-block" id="navigation-button">
+            <a><i class="flaticon-menu-button"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- navbar end -->";s:5:"mtime";i:1614080013;s:6:"markup";s:1385:"<!-- navbar start -->
+<div class="politix-navbar">
+  <nav class="navbar navbar-area navbar-expand-lg nav-style-02">
+    <div class="container nav-container">
+      <div class="responsive-mobile-menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#billatrail_main_menu"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </button>
+      </div>
+      <div class="logo">
+        <a href="index.html"> <img src="{{this.theme.logoHeader.path}}" alt="logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="billatrail_main_menu">
+        {% if staticMenu.menuItems %}
+        <ul class="navbar-nav menu-open">
+          {% partial staticMenu ~ "::items" items=staticMenu.menuItems %}
+        </ul>
+        {% endif %}
+      </div>
+      <div class="nav-right-part">
+        <ul>
+          <li class="search" id="search">
+            <a href="#"><i class="fa fa-search"></i></a>
+          </li>
+          <li class="menubar d-none d-lg-block" id="navigation-button">
+            <a><i class="flaticon-menu-button"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- navbar end -->";s:4:"code";N;s:7:"viewBag";a:0:{}s:10:"staticMenu";a:1:{s:4:"code";s:11:"menu-header";}}}

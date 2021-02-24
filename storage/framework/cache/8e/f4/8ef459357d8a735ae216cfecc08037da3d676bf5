@@ -1,0 +1,53 @@
+1614200523a:1:{s:21:"site/inner_banner.htm";a:6:{s:8:"fileName";s:21:"site/inner_banner.htm";s:7:"content";s:854:"[viewBag]
+==
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="breadcrumb-inner padding-top-240">
+        {% if this.page.url == '/search' %}
+        <h1 class="page-title">Результаты поиска</h1>
+        {% else %}
+        <h1 class="page-title">Recent Cases</h1>
+        {% endif %}
+        {% if breadcrumbs %}
+        <ul class="page-list">
+          <li><a href="index.html">Главная</a></li>
+          {% for breadcrumb in breadcrumbs %}
+          <li class="{{ breadcrumb.isActive ? 'active' : '' }}">
+            <a href="{{ breadcrumb.url }}">{{ breadcrumb.title }} </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="breadcrumb-icon">
+  <i class="flaticon-fireworks"></i>
+</div>";s:5:"mtime";i:1614176019;s:6:"markup";s:839:"<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="breadcrumb-inner padding-top-240">
+        {% if this.page.url == '/search' %}
+        <h1 class="page-title">Результаты поиска</h1>
+        {% else %}
+        <h1 class="page-title">Recent Cases</h1>
+        {% endif %}
+        {% if breadcrumbs %}
+        <ul class="page-list">
+          <li><a href="index.html">Главная</a></li>
+          {% for breadcrumb in breadcrumbs %}
+          <li class="{{ breadcrumb.isActive ? 'active' : '' }}">
+            <a href="{{ breadcrumb.url }}">{{ breadcrumb.title }} </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="breadcrumb-icon">
+  <i class="flaticon-fireworks"></i>
+</div>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

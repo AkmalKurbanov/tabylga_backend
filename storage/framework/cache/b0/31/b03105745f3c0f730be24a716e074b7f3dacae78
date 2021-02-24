@@ -1,0 +1,824 @@
+1614200523a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:16018:"title = "Home"
+url = "/"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[siteSearchInclude]
+==
+<!-- service start -->
+	<div class="our-service-area position-relative padding-top-115 padding-bottom-120">
+	  <div class="donate-wrapper">
+	    <a href="donate.html"><i class="fa fa-heart"></i> Donate Now</a>
+	  </div>
+	  <div class="container">
+	    <div class="row justify-content-center">
+	      <div class="col-lg-12">
+	        <div class="text-center padding-bottom-55">
+	          <h2 class="section-title">We are for the people</h2>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-lg-4 col-md-6">
+	        <div class="icon-box-style-01 hover-style-01 text-center margin-bottom-30">
+	          <div class="sb-icon">
+	            <a href="#"><i class="flaticon-financial"></i></a>
+	          </div>
+	          <div class="sb-content">
+	            <h4>Our Political History</h4>
+	            <p>Lorem ipsum dummy text are used in section so replace your orginal text he Lorem ipsum dummy text</p>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-4 col-md-6">
+	        <div class="icon-box-style-01 hover-style-01 text-center margin-bottom-30">
+	          <div class="sb-icon">
+	            <a href="#"><i class="flaticon-hospital"></i></a>
+	          </div>
+	          <div class="sb-content">
+	            <h4>Our mission & Goal</h4>
+	            <p>Lorem ipsum dummy text are used in section so replace your orginal text he Lorem ipsum dummy text</p>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-4 col-md-6">
+	        <div class="icon-box-style-01 hover-style-01 text-center margin-bottom-30">
+	          <div class="sb-icon">
+	            <a href="#"><i class="flaticon-network"></i></a>
+	          </div>
+	          <div class="sb-content">
+	            <h4>We stand for</h4>
+	            <p>Lorem ipsum dummy text are used in section so replace your orginal text he Lorem ipsum dummy text</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- service end -->
+
+	<!-- politx-content-area start -->
+	<div class="politx-content-area margin-bottom-120 margin-top-60">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-6 align-self-center order-2 order-lg-1">
+	        <div class="content-box-style-01">
+	          <p class="section-subtitle">About us</p>
+	          <h2 class="title">Organization for action</h2>
+	          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt
+	            ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation ullamco laboris nisi ut aliquip ex
+	            ea commodo consequat. exercitation ullamco laboris nisi aliquip ex ea commodo consequat. turnkey
+	            applications lorem dummy. Ut enim minim veniam, exercitation ullamco laboris.</p>
+	          <div class="btn-wrapper padding-top-33">
+	            <a class="btn btn-custom-primary" href="#">Learn more</a>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-5 offset-lg-1 order-1 order-lg-2">
+	        <div class="image-box-style-06">
+	          <img src="assets/img/action/4.png" alt="">
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- politx-content-area end -->
+
+	<!-- vote area start -->
+	<div class="vote-area2 padding-top-125 padding-bottom-115">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-8">
+	        <div class="content-box-style-08">
+	          <p class="subtitle">Vote for</p>
+	          <h2 class="title">Top issues that voters<br> consider important</h2>
+	          <div class="loader-area flex-md-row flex-column d-flex justify-content-md-between margin-top-50">
+	            <div class="d-flex flex-column align-items-center">
+	              <canvas class="loader2"></canvas>
+	              <h4>Resident plan</h4>
+	            </div>
+	            <div class="d-flex flex-column align-items-center">
+	              <canvas class="loader3"></canvas>
+	              <h4>Education system</h4>
+	            </div>
+	            <div class="d-flex flex-column align-items-center">
+	              <canvas class="loader4"></canvas>
+	              <h4>Food</h4>
+	            </div>
+	            <div class="d-flex flex-column align-items-center">
+	              <canvas class="loader5"></canvas>
+	              <h4>Healthcare</h4>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="image-box-style-07">
+	        <img src="assets/img/vote.png" alt="">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- vote area end -->
+
+	<div class="up-event-two margin-bottom-115 padding-top-115">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-12">
+	        <div class="text-center margin-bottom-55">
+	          <h2 class="section-title">Upcoming events</h2>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-lg-6">
+	        <div class="row">
+	          <div class="col-md-6">
+	            <div class="thumb">
+	              <img src="assets/img/event/u1.png" alt="">
+	            </div>
+	          </div>
+	          <div class="col-md-5">
+	            <div class="up-content-style-01">
+	              <div class="date-month">
+	                <span class="date">18</span>
+	                <span class="month">Nov</span>
+	              </div>
+	              <h6>Orphan children's educational campaign</h6>
+	              <ul>
+	                <li><a href="#"><i class="fa fa-map-marker"></i> British King's College Canada</a></li>
+	                <li><a href="#"><i class="fa fa-bell"></i> 10AM- 5PM</a></li>
+	                <li><a href="#"><i class="fa fa-user"></i> 547 People are going</a></li>
+	              </ul>
+	              <div class="btn-wrapper">
+	                <a href="#">Book your seat ➞</a>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-6">
+	        <div class="row">
+	          <div class="col-md-6">
+	            <div class="thumb">
+	              <img src="assets/img/event/u2.png" alt="">
+	            </div>
+	          </div>
+	          <div class="col-md-5">
+	            <div class="up-content-style-01">
+	              <div class="date-month">
+	                <span class="date">18</span>
+	                <span class="month">Nov</span>
+	              </div>
+	              <h6>Orphan children's educational campaign</h6>
+	              <ul>
+	                <li><a href="#"><i class="fa fa-map-marker"></i> British King's College Canada</a></li>
+	                <li><a href="#"><i class="fa fa-bell"></i> 10AM- 5PM</a></li>
+	                <li><a href="#"><i class="fa fa-user"></i> 547 People are going</a></li>
+	              </ul>
+	              <div class="btn-wrapper">
+	                <a href="#">Book your seat ➞</a>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- team area start  -->
+	<div class="guest-area padding-bottom-90">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-12">
+	        <div class="text-center margin-bottom-55">
+	          <h2 class="section-title">Meet with board</h2>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row about-member-count">
+	      <div class="col-lg-3 col-sm-6">
+	        <div class="icon-box-style-03 text-center margin-bottom-30 margin-top-50">
+	          <div class="memeber-img">
+	            <img src="assets/img/team/1.png" alt="">
+	            <div class="member-social-style-1">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+	              </ul>
+	            </div>
+	            <div class="member-social">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	              </ul>
+	            </div>
+	          </div>
+	          <div class="sb-content">
+	            <h4 class="title">Charif Barrani</h4>
+	            <p>Chairman</p>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-3 col-sm-6">
+	        <div class="icon-box-style-03 text-center margin-bottom-30">
+	          <div class="memeber-img">
+	            <img src="assets/img/team/2.png" alt="">
+	            <div class="member-social-style-1">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+	              </ul>
+	            </div>
+	            <div class="member-social">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	              </ul>
+	            </div>
+	          </div>
+	          <div class="sb-content">
+	            <h4 class="title">Sharifur Robin</h4>
+	            <p>Project Manager</p>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-3 col-sm-6">
+	        <div class="icon-box-style-03 text-center margin-bottom-30 margin-top-50">
+	          <div class="memeber-img">
+	            <img src="assets/img/team/3.png" alt="">
+	            <div class="member-social-style-1">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+	              </ul>
+	            </div>
+	            <div class="member-social">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	              </ul>
+	            </div>
+	          </div>
+	          <div class="sb-content">
+	            <h4 class="title">Jane smith</h4>
+	            <p>Designer</p>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-3 col-sm-6">
+	        <div class="icon-box-style-03 text-center margin-bottom-30">
+	          <div class="memeber-img">
+	            <img src="assets/img/team/4.png" alt="">
+	            <div class="member-social-style-1">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+	              </ul>
+	            </div>
+	            <div class="member-social">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	              </ul>
+	            </div>
+	          </div>
+	          <div class="sb-content">
+	            <h4 class="title">Farhad hossain</h4>
+	            <p>Admin</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- team area end  -->
+
+	<div class="testimonial-area padding-top-100 margin-bottom-75">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-12">
+	        <div class="text-center">
+	          <h2 class="section-title color-white">What people say</h2>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-md-8 offset-md-2">
+	        <div class="testimonial-slider">
+	          <div class="single-testimonial-item">
+	            <div class="d-flex">
+	              <div class="thumb">
+	                <img src="assets/img/testimonial/1.png" alt="">
+	              </div>
+	              <div class="content">
+	                <h4>Met dolore magna aliqua. Ut enim ad minim veniam exercitation ullamco laboris nisi ut aliquip ex
+	                  eaist Met dolore magna aliqua. Ut enim</h4>
+	                <span class="title">Salman Khan</span>
+	                <p class="address">West newyork area, NewYork city, USA</p>
+	              </div>
+	            </div>
+	            <div class="quote">
+	              <img src="assets/img/quote.png" alt="">
+	            </div>
+	          </div>
+	          <div class="single-testimonial-item">
+	            <div class="d-flex">
+	              <div class="thumb">
+	                <img src="assets/img/testimonial/1.png" alt="">
+	              </div>
+	              <div class="content">
+	                <h4>Met dolore magna aliqua. Ut enim ad minim veniam exercitation ullamco laboris nisi ut aliquip ex
+	                  eaist Met dolore magna aliqua. Ut enim</h4>
+	                <span class="title">Salman Khan</span>
+	                <p class="address">West newyork area, NewYork city, USA</p>
+	              </div>
+	            </div>
+	            <div class="quote">
+	              <img src="assets/img/quote.png" alt="">
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- blog area Start -->
+	<div class="home-news-area padding-top-115">
+	  <div class="container">
+	    <div class="row justify-content-center">
+	      <div class="col-lg-12">
+	        <div class="text-center padding-bottom-55">
+	          <h2 class="section-title">Read latest blog</h2>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-lg-4">
+	        <div class="news-item-style-03">
+	          <div class="thumb">
+	            <img src="assets/img/blog/1.png" alt="news">
+	            <div class="small-thumb">
+	              <img src="assets/img/blog/sm1.png" alt="small thumb">
+	            </div>
+	          </div>
+	          <div class="content">
+	            <p class="subtitle">Politics</p>
+	            <h4 class="title"><a href="blog-details.html">Key chairs call to cancel press conference on</a></h4>
+	            <ul class="blog-meta d-flex flex-column flex-lg-row">
+	              <li><a href="#">25 September 2019</a></li>
+	              <li><a href="#">Read 4576</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-4">
+	        <div class="news-item-style-03">
+	          <div class="thumb">
+	            <img src="assets/img/blog/2.png" alt="news">
+	            <div class="small-thumb">
+	              <img src="assets/img/blog/sm2.png" alt="small thumb">
+	            </div>
+	          </div>
+	          <div class="content">
+	            <p class="subtitle">World economy</p>
+	            <h4 class="title"><a href="blog-details.html">International Peace Conference Attended</a></h4>
+	            <ul class="blog-meta d-flex flex-column flex-lg-row">
+	              <li><a href="#">05 December 2019</a></li>
+	              <li><a href="#">Read 876</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-4">
+	        <div class="news-item-style-03">
+	          <div class="thumb">
+	            <img src="assets/img/blog/3.png" alt="news">
+	            <div class="small-thumb">
+	              <img src="assets/img/blog/sm3.png" alt="small thumb">
+	            </div>
+	          </div>
+	          <div class="content">
+	            <p class="subtitle">Education</p>
+	            <h4 class="title"><a href="blog-details.html">Trump paints Democrats as fixated on impeachment...</a></h4>
+	            <ul class="blog-meta d-flex flex-column flex-lg-row">
+	              <li><a href="#">27 November 2019</a></li>
+	              <li><a href="#">Read 7664</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- blog area End -->";s:5:"mtime";i:1614192505;s:6:"markup";s:15881:"<!-- service start -->
+	<div class="our-service-area position-relative padding-top-115 padding-bottom-120">
+	  <div class="donate-wrapper">
+	    <a href="donate.html"><i class="fa fa-heart"></i> Donate Now</a>
+	  </div>
+	  <div class="container">
+	    <div class="row justify-content-center">
+	      <div class="col-lg-12">
+	        <div class="text-center padding-bottom-55">
+	          <h2 class="section-title">We are for the people</h2>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-lg-4 col-md-6">
+	        <div class="icon-box-style-01 hover-style-01 text-center margin-bottom-30">
+	          <div class="sb-icon">
+	            <a href="#"><i class="flaticon-financial"></i></a>
+	          </div>
+	          <div class="sb-content">
+	            <h4>Our Political History</h4>
+	            <p>Lorem ipsum dummy text are used in section so replace your orginal text he Lorem ipsum dummy text</p>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-4 col-md-6">
+	        <div class="icon-box-style-01 hover-style-01 text-center margin-bottom-30">
+	          <div class="sb-icon">
+	            <a href="#"><i class="flaticon-hospital"></i></a>
+	          </div>
+	          <div class="sb-content">
+	            <h4>Our mission & Goal</h4>
+	            <p>Lorem ipsum dummy text are used in section so replace your orginal text he Lorem ipsum dummy text</p>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-4 col-md-6">
+	        <div class="icon-box-style-01 hover-style-01 text-center margin-bottom-30">
+	          <div class="sb-icon">
+	            <a href="#"><i class="flaticon-network"></i></a>
+	          </div>
+	          <div class="sb-content">
+	            <h4>We stand for</h4>
+	            <p>Lorem ipsum dummy text are used in section so replace your orginal text he Lorem ipsum dummy text</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- service end -->
+
+	<!-- politx-content-area start -->
+	<div class="politx-content-area margin-bottom-120 margin-top-60">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-6 align-self-center order-2 order-lg-1">
+	        <div class="content-box-style-01">
+	          <p class="section-subtitle">About us</p>
+	          <h2 class="title">Organization for action</h2>
+	          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt
+	            ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation ullamco laboris nisi ut aliquip ex
+	            ea commodo consequat. exercitation ullamco laboris nisi aliquip ex ea commodo consequat. turnkey
+	            applications lorem dummy. Ut enim minim veniam, exercitation ullamco laboris.</p>
+	          <div class="btn-wrapper padding-top-33">
+	            <a class="btn btn-custom-primary" href="#">Learn more</a>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-5 offset-lg-1 order-1 order-lg-2">
+	        <div class="image-box-style-06">
+	          <img src="assets/img/action/4.png" alt="">
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- politx-content-area end -->
+
+	<!-- vote area start -->
+	<div class="vote-area2 padding-top-125 padding-bottom-115">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-8">
+	        <div class="content-box-style-08">
+	          <p class="subtitle">Vote for</p>
+	          <h2 class="title">Top issues that voters<br> consider important</h2>
+	          <div class="loader-area flex-md-row flex-column d-flex justify-content-md-between margin-top-50">
+	            <div class="d-flex flex-column align-items-center">
+	              <canvas class="loader2"></canvas>
+	              <h4>Resident plan</h4>
+	            </div>
+	            <div class="d-flex flex-column align-items-center">
+	              <canvas class="loader3"></canvas>
+	              <h4>Education system</h4>
+	            </div>
+	            <div class="d-flex flex-column align-items-center">
+	              <canvas class="loader4"></canvas>
+	              <h4>Food</h4>
+	            </div>
+	            <div class="d-flex flex-column align-items-center">
+	              <canvas class="loader5"></canvas>
+	              <h4>Healthcare</h4>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="image-box-style-07">
+	        <img src="assets/img/vote.png" alt="">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- vote area end -->
+
+	<div class="up-event-two margin-bottom-115 padding-top-115">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-12">
+	        <div class="text-center margin-bottom-55">
+	          <h2 class="section-title">Upcoming events</h2>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-lg-6">
+	        <div class="row">
+	          <div class="col-md-6">
+	            <div class="thumb">
+	              <img src="assets/img/event/u1.png" alt="">
+	            </div>
+	          </div>
+	          <div class="col-md-5">
+	            <div class="up-content-style-01">
+	              <div class="date-month">
+	                <span class="date">18</span>
+	                <span class="month">Nov</span>
+	              </div>
+	              <h6>Orphan children's educational campaign</h6>
+	              <ul>
+	                <li><a href="#"><i class="fa fa-map-marker"></i> British King's College Canada</a></li>
+	                <li><a href="#"><i class="fa fa-bell"></i> 10AM- 5PM</a></li>
+	                <li><a href="#"><i class="fa fa-user"></i> 547 People are going</a></li>
+	              </ul>
+	              <div class="btn-wrapper">
+	                <a href="#">Book your seat ➞</a>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-6">
+	        <div class="row">
+	          <div class="col-md-6">
+	            <div class="thumb">
+	              <img src="assets/img/event/u2.png" alt="">
+	            </div>
+	          </div>
+	          <div class="col-md-5">
+	            <div class="up-content-style-01">
+	              <div class="date-month">
+	                <span class="date">18</span>
+	                <span class="month">Nov</span>
+	              </div>
+	              <h6>Orphan children's educational campaign</h6>
+	              <ul>
+	                <li><a href="#"><i class="fa fa-map-marker"></i> British King's College Canada</a></li>
+	                <li><a href="#"><i class="fa fa-bell"></i> 10AM- 5PM</a></li>
+	                <li><a href="#"><i class="fa fa-user"></i> 547 People are going</a></li>
+	              </ul>
+	              <div class="btn-wrapper">
+	                <a href="#">Book your seat ➞</a>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- team area start  -->
+	<div class="guest-area padding-bottom-90">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-12">
+	        <div class="text-center margin-bottom-55">
+	          <h2 class="section-title">Meet with board</h2>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row about-member-count">
+	      <div class="col-lg-3 col-sm-6">
+	        <div class="icon-box-style-03 text-center margin-bottom-30 margin-top-50">
+	          <div class="memeber-img">
+	            <img src="assets/img/team/1.png" alt="">
+	            <div class="member-social-style-1">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+	              </ul>
+	            </div>
+	            <div class="member-social">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	              </ul>
+	            </div>
+	          </div>
+	          <div class="sb-content">
+	            <h4 class="title">Charif Barrani</h4>
+	            <p>Chairman</p>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-3 col-sm-6">
+	        <div class="icon-box-style-03 text-center margin-bottom-30">
+	          <div class="memeber-img">
+	            <img src="assets/img/team/2.png" alt="">
+	            <div class="member-social-style-1">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+	              </ul>
+	            </div>
+	            <div class="member-social">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	              </ul>
+	            </div>
+	          </div>
+	          <div class="sb-content">
+	            <h4 class="title">Sharifur Robin</h4>
+	            <p>Project Manager</p>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-3 col-sm-6">
+	        <div class="icon-box-style-03 text-center margin-bottom-30 margin-top-50">
+	          <div class="memeber-img">
+	            <img src="assets/img/team/3.png" alt="">
+	            <div class="member-social-style-1">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+	              </ul>
+	            </div>
+	            <div class="member-social">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	              </ul>
+	            </div>
+	          </div>
+	          <div class="sb-content">
+	            <h4 class="title">Jane smith</h4>
+	            <p>Designer</p>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-3 col-sm-6">
+	        <div class="icon-box-style-03 text-center margin-bottom-30">
+	          <div class="memeber-img">
+	            <img src="assets/img/team/4.png" alt="">
+	            <div class="member-social-style-1">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+	              </ul>
+	            </div>
+	            <div class="member-social">
+	              <ul>
+	                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	              </ul>
+	            </div>
+	          </div>
+	          <div class="sb-content">
+	            <h4 class="title">Farhad hossain</h4>
+	            <p>Admin</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- team area end  -->
+
+	<div class="testimonial-area padding-top-100 margin-bottom-75">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-12">
+	        <div class="text-center">
+	          <h2 class="section-title color-white">What people say</h2>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-md-8 offset-md-2">
+	        <div class="testimonial-slider">
+	          <div class="single-testimonial-item">
+	            <div class="d-flex">
+	              <div class="thumb">
+	                <img src="assets/img/testimonial/1.png" alt="">
+	              </div>
+	              <div class="content">
+	                <h4>Met dolore magna aliqua. Ut enim ad minim veniam exercitation ullamco laboris nisi ut aliquip ex
+	                  eaist Met dolore magna aliqua. Ut enim</h4>
+	                <span class="title">Salman Khan</span>
+	                <p class="address">West newyork area, NewYork city, USA</p>
+	              </div>
+	            </div>
+	            <div class="quote">
+	              <img src="assets/img/quote.png" alt="">
+	            </div>
+	          </div>
+	          <div class="single-testimonial-item">
+	            <div class="d-flex">
+	              <div class="thumb">
+	                <img src="assets/img/testimonial/1.png" alt="">
+	              </div>
+	              <div class="content">
+	                <h4>Met dolore magna aliqua. Ut enim ad minim veniam exercitation ullamco laboris nisi ut aliquip ex
+	                  eaist Met dolore magna aliqua. Ut enim</h4>
+	                <span class="title">Salman Khan</span>
+	                <p class="address">West newyork area, NewYork city, USA</p>
+	              </div>
+	            </div>
+	            <div class="quote">
+	              <img src="assets/img/quote.png" alt="">
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- blog area Start -->
+	<div class="home-news-area padding-top-115">
+	  <div class="container">
+	    <div class="row justify-content-center">
+	      <div class="col-lg-12">
+	        <div class="text-center padding-bottom-55">
+	          <h2 class="section-title">Read latest blog</h2>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-lg-4">
+	        <div class="news-item-style-03">
+	          <div class="thumb">
+	            <img src="assets/img/blog/1.png" alt="news">
+	            <div class="small-thumb">
+	              <img src="assets/img/blog/sm1.png" alt="small thumb">
+	            </div>
+	          </div>
+	          <div class="content">
+	            <p class="subtitle">Politics</p>
+	            <h4 class="title"><a href="blog-details.html">Key chairs call to cancel press conference on</a></h4>
+	            <ul class="blog-meta d-flex flex-column flex-lg-row">
+	              <li><a href="#">25 September 2019</a></li>
+	              <li><a href="#">Read 4576</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-4">
+	        <div class="news-item-style-03">
+	          <div class="thumb">
+	            <img src="assets/img/blog/2.png" alt="news">
+	            <div class="small-thumb">
+	              <img src="assets/img/blog/sm2.png" alt="small thumb">
+	            </div>
+	          </div>
+	          <div class="content">
+	            <p class="subtitle">World economy</p>
+	            <h4 class="title"><a href="blog-details.html">International Peace Conference Attended</a></h4>
+	            <ul class="blog-meta d-flex flex-column flex-lg-row">
+	              <li><a href="#">05 December 2019</a></li>
+	              <li><a href="#">Read 876</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-lg-4">
+	        <div class="news-item-style-03">
+	          <div class="thumb">
+	            <img src="assets/img/blog/3.png" alt="news">
+	            <div class="small-thumb">
+	              <img src="assets/img/blog/sm3.png" alt="small thumb">
+	            </div>
+	          </div>
+	          <div class="content">
+	            <p class="subtitle">Education</p>
+	            <h4 class="title"><a href="blog-details.html">Trump paints Democrats as fixated on impeachment...</a></h4>
+	            <ul class="blog-meta d-flex flex-column flex-lg-row">
+	              <li><a href="#">27 November 2019</a></li>
+	              <li><a href="#">Read 7664</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- blog area End -->";s:4:"code";N;s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:17:"siteSearchInclude";a:0:{}}}

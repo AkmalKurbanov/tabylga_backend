@@ -1,0 +1,23 @@
+fields:
+    img:
+        label: 'Изображение слайда'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload
+    description:
+        label: 'Описание слайда'
+        size: ''
+        span: auto
+        type: richeditor
+    title:
+        label: 'Заголовок слайда'
+        span: left
+        type: text
+    link:
+        label: Ссылка
+        span: right
+        type: text

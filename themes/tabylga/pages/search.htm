@@ -1,0 +1,32 @@
+title = "Search"
+url = "/search"
+layout = "static-layout"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[searchResults]
+resultsPerPage = 10
+showProviderBadge = 1
+noResultsMessage = "К сожалению, по вашему запросу ничего не найдено."
+visitPageMessage = "Перейти"
+==
+<div class="search-results">
+  <div class="container">
+    {% set results = searchResults.results %}
+
+    {% for result in results %}
+    {# Display all results #}
+    {% partial searchResults ~ '::searchresult.htm' result = result %}
+    {% else %}
+    {# No results found #}
+    {% partial searchResults ~ '::no-results.htm' %}
+    {% endfor %}
+
+    {% partial searchResults ~ '::pagination.htm' results = results %}
+
+    <div class="btn-wrapper align-self-center">
+      <a class="btn btn-custom-primary" href="/">Главная страница</a>
+    </div>
+  </div>
+</div>

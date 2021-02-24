@@ -1,0 +1,65 @@
+1614200523a:1:{s:16:"menu-header.yaml";a:7:{s:8:"fileName";s:16:"menu-header.yaml";s:7:"content";s:1572:"items:
+    -
+        title: Главная
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: home
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'О партии'
+        nesting: null
+        type: url
+        url: '#'
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'О нас'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: o-partii-o-nas
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Идеалогия
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: o-partii-idealogiya
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Блог
+        type: cms-page
+        code: ''
+        reference: blog
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: Меню
+";s:5:"mtime";i:1614191786;s:6:"markup";N;s:4:"code";N;s:4:"name";N;s:5:"items";a:0:{}}}
