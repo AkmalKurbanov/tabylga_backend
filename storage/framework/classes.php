@@ -152,4 +152,5 @@
   'ToughDeveloper\\ImageResizer\\Models\\Settings' => 'plugins\\toughdeveloper\\imageresizer\\models\\Settings.php',
   'RainLab\\Blog\\FormWidgets\\BlogMarkdown' => 'plugins\\rainlab\\blog\\formwidgets\\BlogMarkdown.php',
   'ToughDeveloper\\ImageResizer\\Classes\\Image' => 'plugins\\toughdeveloper\\imageresizer\\classes\\Image.php',
+  'rainlab\\blog\\Controllers\\categories' => 'plugins\\rainlab\\blog\\controllers\\categories.php',
 );

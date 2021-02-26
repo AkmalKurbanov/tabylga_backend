@@ -29,15 +29,15 @@ class __TwigTemplate_5411ad22754a038942aece1ae2627d5ea1fbaeb89cde7694a18c7f39335
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("set" => 8, "for" => 10);
-        $filters = array("escape" => 15, "slice" => 16, "resize" => 17, "date" => 22);
-        $functions = array("str_words" => 43);
+        $tags = array("set" => 8, "for" => 10, "if" => 56, "partial" => 80);
+        $filters = array("escape" => 15, "slice" => 16, "resize" => 17, "date" => 22, "raw" => 44, "page" => 59);
+        $functions = array("str_words" => 44, "range" => 63);
 
         try {
             $this->sandbox->checkSecurity(
-                ['set', 'for'],
-                ['escape', 'slice', 'resize', 'date'],
-                ['str_words']
+                ['set', 'for', 'if', 'partial'],
+                ['escape', 'slice', 'resize', 'date', 'raw', 'page'],
+                ['str_words', 'range']
             );
         } catch (SecurityError $e) {
             $e->setSourceContext($this->source);
@@ -113,13 +113,28 @@ class __TwigTemplate_5411ad22754a038942aece1ae2627d5ea1fbaeb89cde7694a18c7f39335
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "published_at", [], "any", false, false, true, 22), 22, $this->source), "M"), "html", null, true);
             echo "</span></h4>
                 </div>
-                <div class=\"small-thumb\">
-                  <img src=\"assets/img/blog/sm1.png\" alt=\"small thumb\">
-                </div>
               </div>
               <div class=\"b-content\">
                 <div class=\"blog-meta flex-column flex-lg-row\">
-                  <span class=\"causes-tag mr-3\"><a href=\"#\">Politics</a></span>
+                  <span class=\"causes-tag mr-3\">
+                    ";
+            // line 28
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["post"], "categories", [], "any", false, false, true, 28));
+            foreach ($context['_seq'] as $context["_key"] => $context["cat"]) {
+                // line 29
+                echo "                    <a href=\"";
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["cat"], "url", [], "any", false, false, true, 29), 29, $this->source), "html", null, true);
+                echo "\">";
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["cat"], "name", [], "any", false, false, true, 29), 29, $this->source), "html", null, true);
+                echo "</a>
+                    ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['cat'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 31
+            echo "                  </span>
                   <ul>
                     <li><span>Поделиться</span></li>
                     <li>
@@ -131,18 +146,21 @@ class __TwigTemplate_5411ad22754a038942aece1ae2627d5ea1fbaeb89cde7694a18c7f39335
                   </ul>
                 </div>
                 <h4 class=\"section-title\"><a href=\"";
-            // line 41
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "url", [], "any", false, false, true, 41), 41, $this->source), "html", null, true);
+            // line 42
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "url", [], "any", false, false, true, 42), 42, $this->source), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "title", [], "any", false, false, true, 41), 41, $this->source), "html", null, true);
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "title", [], "any", false, false, true, 42), 42, $this->source), "html", null, true);
             echo "</a>
                 </h4>
                 <p>";
-            // line 43
-            echo call_user_func_array($this->env->getFunction('str_words')->getCallable(), ["words", $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "excerpt", [], "any", false, false, true, 43), 43, $this->source), 30]);
+            // line 44
+            echo call_user_func_array($this->env->getFunction('str_words')->getCallable(), ["words", $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "content_html", [], "any", false, false, true, 44), 44, $this->source), 30]);
             echo "</p>
                 <div class=\"btn-wrapper\">
-                  <a href=\"#\">Подробнее</a> ➝
+                  <a href=\"";
+            // line 46
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "url", [], "any", false, false, true, 46), 46, $this->source), "html", null, true);
+            echo "\">Подробнее</a> ➝
                 </div>
               </div>
             </div>
@@ -153,71 +171,77 @@ class __TwigTemplate_5411ad22754a038942aece1ae2627d5ea1fbaeb89cde7694a18c7f39335
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 52
+        // line 53
+        echo "        </div>
+        <div class=\"blog-pagination\">
+
+          ";
+        // line 56
+        if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", [], "any", false, false, true, 56) > 1)) {
+            // line 57
+            echo "          <ul class=\"pagination\">
+            ";
+            // line 58
+            if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 58) > 1)) {
+                // line 59
+                echo "            <li><a href=\"";
+                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 59), "baseFileName", [], "any", false, false, true, 59), 59, $this->source), [twig_get_attribute($this->env, $this->source, ($context["blogPosts"] ?? null), "pageParam", [], "any", false, false, true, 59) => (twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 59) - 1)]);
+                echo "\">&larr;
+              </a></li>
+            ";
+            }
+            // line 62
+            echo "
+            ";
+            // line 63
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", [], "any", false, false, true, 63)));
+            foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
+                // line 64
+                echo "            <li class=\"";
+                echo (((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 64) == $context["page"])) ? ("active") : (null));
+                echo "\">
+              <a href=\"";
+                // line 65
+                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 65), "baseFileName", [], "any", false, false, true, 65), 65, $this->source), [twig_get_attribute($this->env, $this->source, ($context["blogPosts"] ?? null), "pageParam", [], "any", false, false, true, 65) => $context["page"]]);
+                echo "\">";
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed($context["page"], 65, $this->source), "html", null, true);
+                echo "</a>
+            </li>
+            ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 68
+            echo "
+            ";
+            // line 69
+            if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", [], "any", false, false, true, 69) > twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 69))) {
+                // line 70
+                echo "            <li><a href=\"";
+                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 70), "baseFileName", [], "any", false, false, true, 70), 70, $this->source), [twig_get_attribute($this->env, $this->source, ($context["blogPosts"] ?? null), "pageParam", [], "any", false, false, true, 70) => (twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 70) + 1)]);
+                echo "\">
+                &rarr;</a></li>
+            ";
+            }
+            // line 73
+            echo "          </ul>
+          ";
+        }
+        // line 75
         echo "
         </div>
+
       </div>
       <div class=\"col-lg-4\">
-        <div class=\"blog-right-content widget-area sidebar\">
-          <div class=\"widget widget_search\">
-            <form class=\"search-form\">
-              <div class=\"form-group\">
-                <input type=\"text\" name=\"search\" class=\"form-control\" placeholder=\"Type something\">
-              </div>
-              <button class=\"submit-btn\" type=\"submit\">Search</button>
-            </form>
-          </div>
-          <div class=\"widget latest-post-widget\">
-            <div class=\"widget-title\">
-              <h4>Latest posts</h4>
-            </div>
-            <div class=\"latest-item\">
-              <div class=\"content-part\">
-                <p><a href=\"blog-details.html\">Breakfast suffering one who all otherwise lorem ispum suspected</a>
-                </p>
-                <span class=\"text\">25 April 2020</span>
-              </div>
-            </div>
-            <div class=\"latest-item\">
-              <div class=\"content-part\">
-                <p><a href=\"blog-details.html\">Breakfast suffering one who all otherwise lorem ispum suspected</a>
-                </p>
-                <span class=\"text\">25 April 2020</span>
-              </div>
-            </div>
-            <div class=\"latest-item\">
-              <div class=\"content-part\">
-                <p><a href=\"blog-details.html\">Breakfast suffering one who all otherwise lorem ispum suspected</a>
-                </p>
-                <span class=\"text\">25 April 2020</span>
-              </div>
-            </div>
-          </div>
-          <div class=\"widget widget_categories\">
-            <h4 class=\"widget-title\">Categories</h4>
-            <ul class=\"cat-menu\">
-              <li><a href=\"#\">Political party news <span class=\"text-right\">(52)</span></a></li>
-              <li><a href=\"#\">2020 Election <span class=\"text-right\">(52)</span></a></li>
-              <li><a href=\"#\"> Campaign <span class=\"text-right\">(52)</span></a></li>
-              <li><a href=\"#\">Event & Seminar <span class=\"text-right\">(52)</span></a></li>
-              <li><a href=\"#\">Web Development <span class=\"text-right\">(52)</span></a></li>
-            </ul>
-          </div>
-          <div class=\"widget\">
-            <div class=\"blog-sidebar-thumb\">
-              <div class=\"thumb\">
-                <img src=\"assets/img/blog/sidebar-img.png\" alt=\"\">
-              </div>
-              <div class=\"thumb-content\">
-                <h4>Become a volunteer</h4>
-                <div class=\"btn-wrapper align-self-center\">
-                  <a class=\"btn btn-custom-white\" href=\"#\">Join now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        ";
+        // line 80
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/sidebar_blog"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 81
+        echo "      </div>
     </div>
   </div>
 </div>
@@ -236,7 +260,7 @@ class __TwigTemplate_5411ad22754a038942aece1ae2627d5ea1fbaeb89cde7694a18c7f39335
 
     public function getDebugInfo()
     {
-        return array (  157 => 52,  142 => 43,  135 => 41,  111 => 22,  107 => 20,  99 => 18,  94 => 17,  90 => 16,  86 => 15,  80 => 11,  76 => 10,  73 => 9,  71 => 8,  62 => 1,);
+        return array (  244 => 81,  240 => 80,  233 => 75,  229 => 73,  222 => 70,  220 => 69,  217 => 68,  206 => 65,  201 => 64,  197 => 63,  194 => 62,  187 => 59,  185 => 58,  182 => 57,  180 => 56,  175 => 53,  162 => 46,  157 => 44,  150 => 42,  137 => 31,  126 => 29,  122 => 28,  111 => 22,  107 => 20,  99 => 18,  94 => 17,  90 => 16,  86 => 15,  80 => 11,  76 => 10,  73 => 9,  71 => 8,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -264,13 +288,14 @@ class __TwigTemplate_5411ad22754a038942aece1ae2627d5ea1fbaeb89cde7694a18c7f39335
                 <div class=\"blog-date-box\">
                   <h4>{{ post.published_at |date('d') }}<br><span>{{ post.published_at |date('M') }}</span></h4>
                 </div>
-                <div class=\"small-thumb\">
-                  <img src=\"assets/img/blog/sm1.png\" alt=\"small thumb\">
-                </div>
               </div>
               <div class=\"b-content\">
                 <div class=\"blog-meta flex-column flex-lg-row\">
-                  <span class=\"causes-tag mr-3\"><a href=\"#\">Politics</a></span>
+                  <span class=\"causes-tag mr-3\">
+                    {% for cat in post.categories %}
+                    <a href=\"{{cat.url}}\">{{cat.name}}</a>
+                    {%endfor %}
+                  </span>
                   <ul>
                     <li><span>Поделиться</span></li>
                     <li>
@@ -283,78 +308,43 @@ class __TwigTemplate_5411ad22754a038942aece1ae2627d5ea1fbaeb89cde7694a18c7f39335
                 </div>
                 <h4 class=\"section-title\"><a href=\"{{ post.url }}\">{{ post.title }}</a>
                 </h4>
-                <p>{{ str_words(post.excerpt, 30) }}</p>
+                <p>{{ str_words(post.content_html | raw, 30) }}</p>
                 <div class=\"btn-wrapper\">
-                  <a href=\"#\">Подробнее</a> ➝
+                  <a href=\"{{ post.url }}\">Подробнее</a> ➝
                 </div>
               </div>
             </div>
           </div>
 
           {% endfor %}
+        </div>
+        <div class=\"blog-pagination\">
+
+          {% if posts.lastPage > 1 %}
+          <ul class=\"pagination\">
+            {% if posts.currentPage > 1 %}
+            <li><a href=\"{{ this.page.baseFileName | page({ (blogPosts.pageParam): (posts.currentPage-1) }) }}\">&larr;
+              </a></li>
+            {% endif %}
+
+            {% for page in 1..posts.lastPage %}
+            <li class=\"{{ posts.currentPage == page ? 'active' : null }}\">
+              <a href=\"{{ this.page.baseFileName | page({ (blogPosts.pageParam): page }) }}\">{{ page }}</a>
+            </li>
+            {% endfor %}
+
+            {% if posts.lastPage > posts.currentPage %}
+            <li><a href=\"{{ this.page.baseFileName | page({ (blogPosts.pageParam): (posts.currentPage+1) }) }}\">
+                &rarr;</a></li>
+            {% endif %}
+          </ul>
+          {% endif %}
 
         </div>
+
       </div>
       <div class=\"col-lg-4\">
-        <div class=\"blog-right-content widget-area sidebar\">
-          <div class=\"widget widget_search\">
-            <form class=\"search-form\">
-              <div class=\"form-group\">
-                <input type=\"text\" name=\"search\" class=\"form-control\" placeholder=\"Type something\">
-              </div>
-              <button class=\"submit-btn\" type=\"submit\">Search</button>
-            </form>
-          </div>
-          <div class=\"widget latest-post-widget\">
-            <div class=\"widget-title\">
-              <h4>Latest posts</h4>
-            </div>
-            <div class=\"latest-item\">
-              <div class=\"content-part\">
-                <p><a href=\"blog-details.html\">Breakfast suffering one who all otherwise lorem ispum suspected</a>
-                </p>
-                <span class=\"text\">25 April 2020</span>
-              </div>
-            </div>
-            <div class=\"latest-item\">
-              <div class=\"content-part\">
-                <p><a href=\"blog-details.html\">Breakfast suffering one who all otherwise lorem ispum suspected</a>
-                </p>
-                <span class=\"text\">25 April 2020</span>
-              </div>
-            </div>
-            <div class=\"latest-item\">
-              <div class=\"content-part\">
-                <p><a href=\"blog-details.html\">Breakfast suffering one who all otherwise lorem ispum suspected</a>
-                </p>
-                <span class=\"text\">25 April 2020</span>
-              </div>
-            </div>
-          </div>
-          <div class=\"widget widget_categories\">
-            <h4 class=\"widget-title\">Categories</h4>
-            <ul class=\"cat-menu\">
-              <li><a href=\"#\">Political party news <span class=\"text-right\">(52)</span></a></li>
-              <li><a href=\"#\">2020 Election <span class=\"text-right\">(52)</span></a></li>
-              <li><a href=\"#\"> Campaign <span class=\"text-right\">(52)</span></a></li>
-              <li><a href=\"#\">Event & Seminar <span class=\"text-right\">(52)</span></a></li>
-              <li><a href=\"#\">Web Development <span class=\"text-right\">(52)</span></a></li>
-            </ul>
-          </div>
-          <div class=\"widget\">
-            <div class=\"blog-sidebar-thumb\">
-              <div class=\"thumb\">
-                <img src=\"assets/img/blog/sidebar-img.png\" alt=\"\">
-              </div>
-              <div class=\"thumb-content\">
-                <h4>Become a volunteer</h4>
-                <div class=\"btn-wrapper align-self-center\">
-                  <a class=\"btn btn-custom-white\" href=\"#\">Join now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {% partial 'site/sidebar_blog' %}
       </div>
     </div>
   </div>

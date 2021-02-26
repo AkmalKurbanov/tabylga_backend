@@ -1,0 +1,60 @@
+title = "Blog category"
+url = "/blog/category/:slug/:page?"
+layout = "default"
+meta_title = "asdsadsa dsa dsad sa"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "Записей не найдено"
+sortOrder = "published_at desc"
+categoryPage = "blog-category"
+postPage = "post"
+==
+<div class="blog-area margin-top-80">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+
+        {% set posts = blogPosts.posts %}
+
+        {% for post in posts %}
+
+        <div class="blog-details-style-01 margin-bottom-30">
+          <div class="post-wrap">
+            <div class="post-preview">
+              {% for image in post.featured_images %}
+              <a href="{{post.url}}"
+                style="background-image: url('{{image.path | resize(810, false, { mode: 'crop', quality: '80', extension: 'jpg' })}}')">
+              </a>
+              {% endfor %}
+              <div class="post-info">
+                <span class="causes-tag mr-3">
+          {% for cat in post.categories %}
+                    <a href="{{cat.url}}">{{cat.name}}</a>
+                    {%endfor %}
+                </span>
+                <div class="blog-date-box">
+                  <h4>{{ post.published_at |date('d') }}<br><span>{{ post.published_at |date('M') }}</span></h4>
+                </div>
+              </div>
+            </div>
+            <div class="post-content">
+              <h2><a href="#">{{post.title}}</a></h2>
+              {{ str_words(post.content_html | raw, 20) }}
+            </div>
+
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="col-lg-4">
+        {% partial 'site/sidebar_blog' %}
+      </div>
+    </div>
+  </div>
+</div>

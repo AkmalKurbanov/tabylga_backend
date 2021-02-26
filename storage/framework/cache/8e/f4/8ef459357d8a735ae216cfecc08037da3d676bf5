@@ -1,4 +1,4 @@
-1614200523a:1:{s:21:"site/inner_banner.htm";a:6:{s:8:"fileName";s:21:"site/inner_banner.htm";s:7:"content";s:854:"[viewBag]
+1614377953a:1:{s:21:"site/inner_banner.htm";a:6:{s:8:"fileName";s:21:"site/inner_banner.htm";s:7:"content";s:1270:"[viewBag]
 ==
 <div class="container">
   <div class="row">
@@ -7,8 +7,23 @@
         {% if this.page.url == '/search' %}
         <h1 class="page-title">Результаты поиска</h1>
         {% else %}
-        <h1 class="page-title">Recent Cases</h1>
         {% endif %}
+
+        {% if this.page.url == '/blog/:page?' %}
+        <h1 class="page-title">Блог</h1>
+        {% else %}
+        {% endif %}
+
+        {% if this.page.url == '/blog/post/:slug' %}
+        <h1 class="page-title">Блог пост</h1>
+        {% else %}
+        {% endif %}
+
+        {% if this.page.url == '/blog/category/:slug/:page?' %}
+        <h1 class="page-title">Блог категории</h1>
+        {% else %}
+        {% endif %}
+
         {% if breadcrumbs %}
         <ul class="page-list">
           <li><a href="index.html">Главная</a></li>
@@ -25,15 +40,30 @@
 </div>
 <div class="breadcrumb-icon">
   <i class="flaticon-fireworks"></i>
-</div>";s:5:"mtime";i:1614176019;s:6:"markup";s:839:"<div class="container">
+</div>";s:5:"mtime";i:1614377348;s:6:"markup";s:1255:"<div class="container">
   <div class="row">
     <div class="col-lg-12">
       <div class="breadcrumb-inner padding-top-240">
         {% if this.page.url == '/search' %}
         <h1 class="page-title">Результаты поиска</h1>
         {% else %}
-        <h1 class="page-title">Recent Cases</h1>
         {% endif %}
+
+        {% if this.page.url == '/blog/:page?' %}
+        <h1 class="page-title">Блог</h1>
+        {% else %}
+        {% endif %}
+
+        {% if this.page.url == '/blog/post/:slug' %}
+        <h1 class="page-title">Блог пост</h1>
+        {% else %}
+        {% endif %}
+
+        {% if this.page.url == '/blog/category/:slug/:page?' %}
+        <h1 class="page-title">Блог категории</h1>
+        {% else %}
+        {% endif %}
+
         {% if breadcrumbs %}
         <ul class="page-list">
           <li><a href="index.html">Главная</a></li>

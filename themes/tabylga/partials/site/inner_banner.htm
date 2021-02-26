@@ -7,8 +7,23 @@
         {% if this.page.url == '/search' %}
         <h1 class="page-title">Результаты поиска</h1>
         {% else %}
-        <h1 class="page-title">Recent Cases</h1>
         {% endif %}
+
+        {% if this.page.url == '/blog/:page?' %}
+        <h1 class="page-title">Блог</h1>
+        {% else %}
+        {% endif %}
+
+        {% if this.page.url == '/blog/post/:slug' %}
+        <h1 class="page-title">Блог пост</h1>
+        {% else %}
+        {% endif %}
+
+        {% if this.page.url == '/blog/category/:slug/:page?' %}
+        <h1 class="page-title">Блог категории</h1>
+        {% else %}
+        {% endif %}
+
         {% if breadcrumbs %}
         <ul class="page-list">
           <li><a href="index.html">Главная</a></li>

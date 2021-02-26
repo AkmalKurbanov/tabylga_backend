@@ -1,4 +1,4 @@
-1614200523a:1:{s:15:"site/header.htm";a:7:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1438:"[viewBag]
+1614378345a:1:{s:15:"site/header.htm";a:7:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1429:"[viewBag]
 
 [staticMenu]
 code = "menu-header"
@@ -17,7 +17,7 @@ code = "menu-header"
         </button>
       </div>
       <div class="logo">
-        <a href="index.html"> <img src="{{this.theme.logoHeader.path}}" alt="logo"></a>
+        <a href="/"> <img src="{{this.theme.logoHeader.path}}" alt="logo"></a>
       </div>
       <div class="collapse navbar-collapse" id="billatrail_main_menu">
         {% if staticMenu.menuItems %}
@@ -39,7 +39,7 @@ code = "menu-header"
     </div>
   </nav>
 </div>
-<!-- navbar end -->";s:5:"mtime";i:1614080013;s:6:"markup";s:1385:"<!-- navbar start -->
+<!-- navbar end -->";s:5:"mtime";i:1614375866;s:6:"markup";s:1376:"<!-- navbar start -->
 <div class="politix-navbar">
   <nav class="navbar navbar-area navbar-expand-lg nav-style-02">
     <div class="container nav-container">
@@ -53,7 +53,7 @@ code = "menu-header"
         </button>
       </div>
       <div class="logo">
-        <a href="index.html"> <img src="{{this.theme.logoHeader.path}}" alt="logo"></a>
+        <a href="/"> <img src="{{this.theme.logoHeader.path}}" alt="logo"></a>
       </div>
       <div class="collapse navbar-collapse" id="billatrail_main_menu">
         {% if staticMenu.menuItems %}

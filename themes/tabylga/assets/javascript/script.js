@@ -153,9 +153,19 @@
 
   });
 
-$('.navbar-nav li:has(ul)').addClass('menu-item-has-children');
-$('.menu-item-has-children ul').addClass('sub-menu');
-$('.sub-menu a').prepend('<i class="fa fa-long-arrow-right"></i>');
-$('.footer-useful-links li a').prepend('<i class="fa fa-long-arrow-right"></i>');
+  $('.navbar-nav li:has(ul)').addClass('menu-item-has-children');
+  $('.menu-item-has-children ul').addClass('sub-menu');
+  $('.sub-menu a').prepend('<i class="fa fa-long-arrow-right"></i>');
+  $('.footer-useful-links li a').prepend('<i class="fa fa-long-arrow-right"></i>');
+
+  // categories count start
+  $('.cat-menu li .badge').each(function (index) {
+    var badge = $(this).text();
+    console.log(badge);
+    $(this).prev('.cat-menu li a').append(`<span class="text-right">(${badge})</span>`);
+    $(this).remove();
+  });
+  // categories count end
+
 
 })(jQuery);

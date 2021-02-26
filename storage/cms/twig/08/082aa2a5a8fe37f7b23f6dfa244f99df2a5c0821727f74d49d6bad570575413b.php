@@ -73,7 +73,7 @@ class __TwigTemplate_67ef8db4e369560854ecf9c00c5908a878c502c72248ec6cd4363e0e96f
         </button>
       </div>
       <div class=\"logo\">
-        <a href=\"index.html\"> <img src=\"";
+        <a href=\"/\"> <img src=\"";
         // line 15
         echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 15), "logoHeader", [], "any", false, false, true, 15), "path", [], "any", false, false, true, 15), 15, $this->source), "html", null, true);
         echo "\" alt=\"logo\"></a>
@@ -143,7 +143,7 @@ class __TwigTemplate_67ef8db4e369560854ecf9c00c5908a878c502c72248ec6cd4363e0e96f
         </button>
       </div>
       <div class=\"logo\">
-        <a href=\"index.html\"> <img src=\"{{this.theme.logoHeader.path}}\" alt=\"logo\"></a>
+        <a href=\"/\"> <img src=\"{{this.theme.logoHeader.path}}\" alt=\"logo\"></a>
       </div>
       <div class=\"collapse navbar-collapse\" id=\"billatrail_main_menu\">
         {% if staticMenu.menuItems %}

@@ -1,10 +1,10 @@
-1614200523a:1:{s:15:"site/footer.htm";a:8:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:5167:"[staticMenu]
+1614378457a:1:{s:15:"site/footer.htm";a:8:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:5158:"[viewBag]
+
+[staticMenu]
 code = "useful-links"
 
 [staticMenu staticMenu2]
 code = "additional-links"
-
-[viewBag]
 ==
 <!-- footer area start -->
 <footer class="footer-area footer-style-1 main-bg">
@@ -13,7 +13,7 @@ code = "additional-links"
       <div class="row">
         <div class="col-xl-4">
           <div class="footer-widget widget contact-widget">
-            <a href="index.html" class="footer-logo">
+            <a href="/" class="footer-logo">
               <img src="{{this.theme.logoFooter.path}}" alt="footer logo">
             </a>
             {% if this.theme.site_description == true %}
@@ -142,14 +142,14 @@ code = "additional-links"
     </div>
   </div>
 </footer>
-<!-- footer area end -->";s:5:"mtime";i:1614174687;s:6:"markup";s:5058:"<!-- footer area start -->
+<!-- footer area end -->";s:5:"mtime";i:1614377817;s:6:"markup";s:5049:"<!-- footer area start -->
 <footer class="footer-area footer-style-1 main-bg">
   <div class="footer-top">
     <div class="container">
       <div class="row">
         <div class="col-xl-4">
           <div class="footer-widget widget contact-widget">
-            <a href="index.html" class="footer-logo">
+            <a href="/" class="footer-logo">
               <img src="{{this.theme.logoFooter.path}}" alt="footer logo">
             </a>
             {% if this.theme.site_description == true %}
@@ -278,4 +278,4 @@ code = "additional-links"
     </div>
   </div>
 </footer>
-<!-- footer area end -->";s:4:"code";N;s:10:"staticMenu";a:1:{s:4:"code";s:12:"useful-links";}s:22:"staticMenu staticMenu2";a:1:{s:4:"code";s:16:"additional-links";}s:7:"viewBag";a:0:{}}}
+<!-- footer area end -->";s:4:"code";N;s:7:"viewBag";a:0:{}s:10:"staticMenu";a:1:{s:4:"code";s:12:"useful-links";}s:22:"staticMenu staticMenu2";a:1:{s:4:"code";s:16:"additional-links";}}}

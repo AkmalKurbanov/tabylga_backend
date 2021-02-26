@@ -66,7 +66,7 @@ class __TwigTemplate_63d6fa7e990ff8fe986466c01c9d7421b1de755fe069d55679fb59a23d6
       <div class=\"row\">
         <div class=\"col-xl-4\">
           <div class=\"footer-widget widget contact-widget\">
-            <a href=\"index.html\" class=\"footer-logo\">
+            <a href=\"/\" class=\"footer-logo\">
               <img src=\"";
         // line 9
         echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 9), "logoFooter", [], "any", false, false, true, 9), "path", [], "any", false, false, true, 9), 9, $this->source), "html", null, true);
@@ -330,7 +330,7 @@ class __TwigTemplate_63d6fa7e990ff8fe986466c01c9d7421b1de755fe069d55679fb59a23d6
       <div class=\"row\">
         <div class=\"col-xl-4\">
           <div class=\"footer-widget widget contact-widget\">
-            <a href=\"index.html\" class=\"footer-logo\">
+            <a href=\"/\" class=\"footer-logo\">
               <img src=\"{{this.theme.logoFooter.path}}\" alt=\"footer logo\">
             </a>
             {% if this.theme.site_description == true %}

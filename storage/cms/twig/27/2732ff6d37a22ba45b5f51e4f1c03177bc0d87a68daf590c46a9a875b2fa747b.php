@@ -373,7 +373,7 @@ class __TwigTemplate_ab59db3e2fbe3df6022b4a1b4378a99c105602027243b0cc60b92b301a9
         echo "  </section>
 
   <!-- party-box-area start -->
-  <div class=\"party-box-area padding-top-120\">
+  <div class=\"party-box-area padding-top-80\">
     <div class=\"container\">
       <div
         class=\"col-lg-12 party-box-wrapper d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center text-lg-left text-center\">
@@ -555,8 +555,7 @@ class __TwigTemplate_ab59db3e2fbe3df6022b4a1b4378a99c105602027243b0cc60b92b301a9
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
         // line 263
-        echo "
-</body>
+        echo "</body>
 
 </html>";
     }
@@ -732,7 +731,7 @@ class __TwigTemplate_ab59db3e2fbe3df6022b4a1b4378a99c105602027243b0cc60b92b301a9
   </section>
 
   <!-- party-box-area start -->
-  <div class=\"party-box-area padding-top-120\">
+  <div class=\"party-box-area padding-top-80\">
     <div class=\"container\">
       <div
         class=\"col-lg-12 party-box-wrapper d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center text-lg-left text-center\">
@@ -840,7 +839,6 @@ class __TwigTemplate_ab59db3e2fbe3df6022b4a1b4378a99c105602027243b0cc60b92b301a9
   <script src=\"{{ 'assets/javascript/main.js'|theme }}\"></script>
   {% framework extras %}
   {% scripts %}
-
 </body>
 
 </html>", "C:\\work\\OpenServer\\domains\\tabylga.loc/themes/tabylga/layouts/default.htm", "");
