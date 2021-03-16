@@ -1,10 +1,10 @@
 <h4 class="ss-result__title">
-    <a href="{{ result.url | app }}">{{ result.title | raw }}</a>
-    {% if __SELF__.showProviderBadge %}
+    <a href="{{ result.url | app }}">{{ result.title|_ | raw }}</a>
+    <!-- {% if __SELF__.showProviderBadge %}
         <span class="ss-result__badge">
             {{ result.provider }} 
         </span>
-    {% endif %}
+    {% endif %} -->
 
     {# Some results contain meta information.     #}
     {# You can access it using result.meta.       #}
@@ -19,5 +19,6 @@
 </p>
 
 <p class="ss-result__url">
-    <a href="{{ result.url | app }}" class="ss-result__link">{{ __SELF__.visitPageMessage }} &rarr;</a>
+    <!-- <a href="{{ result.url | app }}" class="ss-result__link">{{ __SELF__.visitPageMessage }} &rarr;</a> -->
+    <a href="{{ result.url | app }}" class="ss-result__link">{{'Көрү'|_}} &rarr;</a>
 </p>

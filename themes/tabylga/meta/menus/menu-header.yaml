@@ -1,6 +1,6 @@
 items:
     -
-        title: Главная
+        title: 'Башкы бет'
         nesting: null
         type: cms-page
         url: null
@@ -9,36 +9,31 @@ items:
         cmsPage: null
         replace: null
         viewBag:
+            locale:
+                ru:
+                    title: Главная
+                    url: ''
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: 'О партии'
-        nesting: null
-        type: url
-        url: '#'
+        nesting: 0
+        type: static-page
+        url: null
         code: ''
-        reference: null
+        reference: o-partii
         cmsPage: null
-        replace: null
+        replace: 0
         viewBag:
+            locale:
+                kg:
+                    title: 'Партия жөнүндө'
+                    url: ''
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
         items:
-            -
-                title: 'О нас'
-                nesting: 0
-                type: static-page
-                url: null
-                code: ''
-                reference: o-partii-o-nas
-                cmsPage: null
-                replace: 0
-                viewBag:
-                    isHidden: '0'
-                    cssClass: ''
-                    isExternal: '0'
             -
                 title: Идеалогия
                 nesting: 0
@@ -49,15 +44,76 @@ items:
                 cmsPage: null
                 replace: 0
                 viewBag:
+                    locale:
+                        ru:
+                            title: Идеалогия
+                            url: ''
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Цели
+                nesting: 0
+                type: static-page
+                code: ''
+                reference: o-partii-goals
+                replace: 0
+                viewBag:
+                    locale:
+                        kg:
+                            title: Максаттар
+                            url: ''
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
     -
         title: Блог
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: blog
+        cmsPage: null
+        replace: null
         viewBag:
+            locale:
+                ru:
+                    title: Блог
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Окуялар
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: events
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                ru:
+                    title: События
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Байланыштар
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: contacts
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                ru:
+                    title: Контакты
+                    url: ''
             isHidden: '0'
             cssClass: ''
             isExternal: '0'

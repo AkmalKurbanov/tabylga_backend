@@ -1,0 +1,16 @@
+plugin:
+    name: 'akmal.members::lang.plugin.name'
+    description: 'akmal.members::lang.plugin.description'
+    author: Akmal
+    icon: oc-icon-graduation-cap
+    homepage: ''
+navigation:
+    Members:
+        label: 'Члены партии'
+        url: akmal/members/members
+        icon: icon-graduation-cap
+        sideMenu:
+            Location:
+                label: Месторасположение
+                url: akmal/members/location
+                icon: icon-map-marker

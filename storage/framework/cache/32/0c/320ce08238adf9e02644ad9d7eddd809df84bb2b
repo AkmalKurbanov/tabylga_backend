@@ -1,0 +1,155 @@
+1615910701a:1:{s:16:"site/sidebar.htm";a:5:{s:8:"fileName";s:16:"site/sidebar.htm";s:7:"content";s:2624:"   <button class="sidebar-menu-close"><i class="flaticon-close"></i></button>
+   <div class="sidebar-inner">
+     <div class="sidebar-logo">
+       {% if activeLocale == 'ru' %}
+       <img src="{{this.theme.logoSidebarRu.path}}" alt="logo" />
+       {% else %}
+       <img src="{{this.theme.logoSidebarKg.path}}" alt="logo" />
+       {% endif %}
+     </div>
+     {% if this.theme.site_description == true %}
+     <div class="sidemenu-text">
+       {{this.theme.site_description | raw}}
+     </div>
+     {% else %}
+     {% endif %}
+
+
+     <div class="sidebar-contact">
+       <h4>{{'Свяжитесь с нами'|_}}</h4>
+       <ul>
+
+         {% for contact in this.theme.contacts %}
+
+         {% if contact.address == true %}
+         <li><i class="fa fa-map-marker"></i>
+           {% if activeLocale == 'ru' %}
+           {{contact.address}}
+           {% else %}
+           {{contact.addressKg}}
+           {% endif %}
+         </li>
+         {% else %}
+         {% endif %}
+
+         {% if contact.phone1 == true %}
+         <li><i class="fa fa-phone"></i>(+996) {{contact.phone1}}</li>
+         {% else %}
+         {% endif %}
+
+         {% if contact.phone2 == true %}
+         <li><i class="fa fa-phone"></i>(+996) {{contact.phone2}}</li>
+         {% else %}
+         {% endif %}
+
+         {% if contact.user_email1 == true %}
+         <li><i class="fa fa-envelope"></i>{{contact.user_email1}}</li>
+         {% else %}
+         {% endif %}
+
+         {% if contact.user_email2 == true %}
+         <li><i class="fa fa-envelope"></i>{{contact.user_email2}}</li>
+         {% else %}
+         {% endif %}
+
+         {% endfor %}
+
+       </ul>
+     </div>
+
+
+     <div class="sidebar-subscribe">
+       <form class="contact-form" data-request="{{ genericForm }}::onFormSubmit">
+         <div id="{{ genericForm }}_forms_flash"></div>
+         {{ form_token() }}
+         <input type="text" id="name" name="Имя" placeholder="{{'Ваше имя'|_}}" required>
+         <input type="text" id="email" name="email" placeholder="{{'Ваш email'|_}}" required>
+         <input type="text" id="number" name="телефон" placeholder="{{'Ваш телефон'|_}}" required>
+         <button class="btn" id="simpleContactSubmitButton" type="submit"><i class="fa fa-envelope-o"></i></button>
+       </form>
+     </div>
+     <div class="social-link">
+       <ul>
+         {% for item in this.theme.social %}
+         <li><a href="{{item.url}}"><i class="{{item.awesome_icon}}"></i></a></li>
+         {% endfor %}
+       </ul>
+     </div>
+   </div>";s:5:"mtime";i:1615905404;s:6:"markup";s:2621:"<button class="sidebar-menu-close"><i class="flaticon-close"></i></button>
+   <div class="sidebar-inner">
+     <div class="sidebar-logo">
+       {% if activeLocale == 'ru' %}
+       <img src="{{this.theme.logoSidebarRu.path}}" alt="logo" />
+       {% else %}
+       <img src="{{this.theme.logoSidebarKg.path}}" alt="logo" />
+       {% endif %}
+     </div>
+     {% if this.theme.site_description == true %}
+     <div class="sidemenu-text">
+       {{this.theme.site_description | raw}}
+     </div>
+     {% else %}
+     {% endif %}
+
+
+     <div class="sidebar-contact">
+       <h4>{{'Свяжитесь с нами'|_}}</h4>
+       <ul>
+
+         {% for contact in this.theme.contacts %}
+
+         {% if contact.address == true %}
+         <li><i class="fa fa-map-marker"></i>
+           {% if activeLocale == 'ru' %}
+           {{contact.address}}
+           {% else %}
+           {{contact.addressKg}}
+           {% endif %}
+         </li>
+         {% else %}
+         {% endif %}
+
+         {% if contact.phone1 == true %}
+         <li><i class="fa fa-phone"></i>(+996) {{contact.phone1}}</li>
+         {% else %}
+         {% endif %}
+
+         {% if contact.phone2 == true %}
+         <li><i class="fa fa-phone"></i>(+996) {{contact.phone2}}</li>
+         {% else %}
+         {% endif %}
+
+         {% if contact.user_email1 == true %}
+         <li><i class="fa fa-envelope"></i>{{contact.user_email1}}</li>
+         {% else %}
+         {% endif %}
+
+         {% if contact.user_email2 == true %}
+         <li><i class="fa fa-envelope"></i>{{contact.user_email2}}</li>
+         {% else %}
+         {% endif %}
+
+         {% endfor %}
+
+       </ul>
+     </div>
+
+
+     <div class="sidebar-subscribe">
+       <form class="contact-form" data-request="{{ genericForm }}::onFormSubmit">
+         <div id="{{ genericForm }}_forms_flash"></div>
+         {{ form_token() }}
+         <input type="text" id="name" name="Имя" placeholder="{{'Ваше имя'|_}}" required>
+         <input type="text" id="email" name="email" placeholder="{{'Ваш email'|_}}" required>
+         <input type="text" id="number" name="телефон" placeholder="{{'Ваш телефон'|_}}" required>
+         <button class="btn" id="simpleContactSubmitButton" type="submit"><i class="fa fa-envelope-o"></i></button>
+       </form>
+     </div>
+     <div class="social-link">
+       <ul>
+         {% for item in this.theme.social %}
+         <li><a href="{{item.url}}"><i class="{{item.awesome_icon}}"></i></a></li>
+         {% endfor %}
+       </ul>
+     </div>
+   </div>";s:4:"code";N;}}

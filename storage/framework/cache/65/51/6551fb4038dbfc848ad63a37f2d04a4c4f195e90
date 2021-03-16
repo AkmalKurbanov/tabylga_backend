@@ -1,0 +1,107 @@
+1615910701a:1:{s:8:"join.htm";a:17:{s:8:"fileName";s:8:"join.htm";s:7:"content";s:2547:"title = "Присоединиться"
+url = "/join"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[viewBag]
+localeTitle[ru] = "Присоединиться"
+localeTitle[kg] = "Кошулуу"
+localeUrl[kg] = "/join"
+
+[genericForm genericJoinForm]
+messages_success = "Ваша форма была успешно отправлена!"
+messages_errors = "В вашей заявке содержатся ошибки."
+reset_form = 1
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
+==
+<div class="politx-content-area padding-top-115">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="section-subtitle">{{'Присоединиться'|_}}</p>
+        <h2 class="title">{{'Присоединиться к партнерству'|_}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+
+        <form class="donate-form" data-request="{{ genericJoinForm }}::onFormSubmit">
+          <div id="{{ genericJoinForm }}_forms_flash"></div>
+          {{ form_token() }}
+          <div class="row">
+            <div class="col">
+              <input type="hidden" class="form-control" id="joinPartners" name="Заявка по партнерству"
+                value="Присоединиться к партнерству">
+              <input type="text" class="form-control" id="name" name="Имя" placeholder="{{'Ваше имя'|_}}" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="email" name="email" placeholder="{{'Ваш email'|_}}"
+                required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" id="number" name="телефон"
+                placeholder="{{'Ваш телефон'|_}}" required>
+            </div>
+            <div class="col">
+              <button class="btn btn-custom-primary" id="simpleContactSubmitButton" type="submit"
+                style="width: 100%; border: 1px solid rgba(4, 51, 129, 0.2)">{{'Отправить'|_}}</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>";s:5:"mtime";i:1615809686;s:6:"markup";s:1780:"<div class="politx-content-area padding-top-115">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="section-subtitle">{{'Присоединиться'|_}}</p>
+        <h2 class="title">{{'Присоединиться к партнерству'|_}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+
+        <form class="donate-form" data-request="{{ genericJoinForm }}::onFormSubmit">
+          <div id="{{ genericJoinForm }}_forms_flash"></div>
+          {{ form_token() }}
+          <div class="row">
+            <div class="col">
+              <input type="hidden" class="form-control" id="joinPartners" name="Заявка по партнерству"
+                value="Присоединиться к партнерству">
+              <input type="text" class="form-control" id="name" name="Имя" placeholder="{{'Ваше имя'|_}}" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="email" name="email" placeholder="{{'Ваш email'|_}}"
+                required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" id="number" name="телефон"
+                placeholder="{{'Ваш телефон'|_}}" required>
+            </div>
+            <div class="col">
+              <button class="btn btn-custom-primary" id="simpleContactSubmitButton" type="submit"
+                style="width: 100%; border: 1px solid rgba(4, 51, 129, 0.2)">{{'Отправить'|_}}</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>";s:4:"code";N;s:5:"title";s:28:"Присоединиться";s:3:"url";s:5:"/join";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:8:"child_of";s:13:"mey_no_parent";s:10:"hide_crumb";s:1:"0";s:18:"remove_crumb_trail";s:1:"0";s:14:"crumb_disabled";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:2:{s:2:"ru";s:28:"Присоединиться";s:2:"kg";s:14:"Кошулуу";}s:9:"localeUrl";a:1:{s:2:"kg";s:5:"/join";}}s:27:"genericForm genericJoinForm";a:10:{s:16:"messages_success";s:65:"Ваша форма была успешно отправлена!";s:15:"messages_errors";s:61:"В вашей заявке содержатся ошибки.";s:10:"reset_form";s:1:"1";s:13:"inline_errors";s:8:"disabled";s:13:"sanitize_data";s:8:"disabled";s:12:"anonymize_ip";s:8:"disabled";s:15:"recaptcha_theme";s:5:"light";s:14:"recaptcha_type";s:5:"image";s:14:"recaptcha_size";s:6:"normal";s:18:"emails_date_format";s:5:"Y-m-d";}}}

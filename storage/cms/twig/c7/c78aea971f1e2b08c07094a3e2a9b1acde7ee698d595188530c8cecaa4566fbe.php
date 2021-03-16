@@ -29,14 +29,14 @@ class __TwigTemplate_63d6fa7e990ff8fe986466c01c9d7421b1de755fe069d55679fb59a23d6
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("if" => 11, "for" => 17, "partial" => 95);
-        $filters = array("escape" => 9, "raw" => 12);
+        $tags = array("if" => 9, "for" => 21, "partial" => 103);
+        $filters = array("escape" => 10, "raw" => 16, "_" => 100);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 ['if', 'for', 'partial'],
-                ['escape', 'raw'],
+                ['escape', 'raw', '_'],
                 []
             );
         } catch (SecurityError $e) {
@@ -67,168 +67,192 @@ class __TwigTemplate_63d6fa7e990ff8fe986466c01c9d7421b1de755fe069d55679fb59a23d6
         <div class=\"col-xl-4\">
           <div class=\"footer-widget widget contact-widget\">
             <a href=\"/\" class=\"footer-logo\">
-              <img src=\"";
+              ";
         // line 9
-        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 9), "logoFooter", [], "any", false, false, true, 9), "path", [], "any", false, false, true, 9), 9, $this->source), "html", null, true);
-        echo "\" alt=\"footer logo\">
-            </a>
-            ";
-        // line 11
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 11), "site_description", [], "any", false, false, true, 11) == true)) {
+        if ((($context["activeLocale"] ?? null) == "ru")) {
+            // line 10
+            echo "              <img src=\"";
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 10), "logoFooterRu", [], "any", false, false, true, 10), "path", [], "any", false, false, true, 10), 10, $this->source), "html", null, true);
+            echo "\" alt=\"footer logo\">
+              ";
+        } else {
             // line 12
+            echo "              <img src=\"";
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 12), "logoFooterKg", [], "any", false, false, true, 12), "path", [], "any", false, false, true, 12), 12, $this->source), "html", null, true);
+            echo "\" alt=\"footer logo\">
+              ";
+        }
+        // line 14
+        echo "            </a>
+            ";
+        // line 15
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 15), "site_description", [], "any", false, false, true, 15) == true)) {
+            // line 16
             echo "            ";
-            echo $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 12), "site_description", [], "any", false, false, true, 12), 12, $this->source);
+            echo $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 16), "site_description", [], "any", false, false, true, 16), 16, $this->source);
             echo "
             ";
         } else {
-            // line 14
+            // line 18
             echo "            ";
         }
-        // line 15
+        // line 19
         echo "            <ul class=\"contact_info_list\">
 
               ";
-        // line 17
+        // line 21
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 17), "contacts", [], "any", false, false, true, 17));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 21), "contacts", [], "any", false, false, true, 21));
         foreach ($context['_seq'] as $context["_key"] => $context["contact"]) {
-            // line 18
+            // line 22
             echo "
               ";
-            // line 19
-            if ((twig_get_attribute($this->env, $this->source, $context["contact"], "address", [], "any", false, false, true, 19) == true)) {
-                // line 20
+            // line 23
+            if ((twig_get_attribute($this->env, $this->source, $context["contact"], "address", [], "any", false, false, true, 23) == true)) {
+                // line 24
                 echo "              <li class=\"single-info-item\">
                 <div class=\"icon\">
                   <i class=\"fa fa-envelope\"></i>
                 </div>
                 <div class=\"details\">
                   ";
-                // line 25
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["contact"], "address", [], "any", false, false, true, 25), 25, $this->source), "html", null, true);
-                echo "
-                </div>
-              </li>
-              ";
-            } else {
                 // line 29
-                echo "              ";
-            }
-            // line 30
-            echo "
+                if ((($context["activeLocale"] ?? null) == "ru")) {
+                    // line 30
+                    echo "                  ";
+                    echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["contact"], "address", [], "any", false, false, true, 30), 30, $this->source), "html", null, true);
+                    echo "
+                  ";
+                } else {
+                    // line 32
+                    echo "                  ";
+                    echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["contact"], "addressKg", [], "any", false, false, true, 32), 32, $this->source), "html", null, true);
+                    echo "
+                  ";
+                }
+                // line 34
+                echo "                </div>
+              </li>
               ";
-            // line 31
-            if ((twig_get_attribute($this->env, $this->source, $context["contact"], "phone1", [], "any", false, false, true, 31) == true)) {
-                // line 32
-                echo "              <li class=\"single-info-item\">
-                <div class=\"icon\">
-                  <i class=\"fa fa-phone\"></i>
-                </div>
-                <div class=\"details\">
-                  (+996) ";
+            } else {
                 // line 37
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["contact"], "phone1", [], "any", false, false, true, 37), 37, $this->source), "html", null, true);
-                echo "
-                </div>
-              </li>
-              ";
-            } else {
-                // line 41
                 echo "              ";
             }
-            // line 42
+            // line 38
             echo "
               ";
-            // line 43
-            if ((twig_get_attribute($this->env, $this->source, $context["contact"], "phone2", [], "any", false, false, true, 43) == true)) {
-                // line 44
+            // line 39
+            if ((twig_get_attribute($this->env, $this->source, $context["contact"], "phone1", [], "any", false, false, true, 39) == true)) {
+                // line 40
                 echo "              <li class=\"single-info-item\">
                 <div class=\"icon\">
                   <i class=\"fa fa-phone\"></i>
                 </div>
                 <div class=\"details\">
                   (+996) ";
+                // line 45
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["contact"], "phone1", [], "any", false, false, true, 45), 45, $this->source), "html", null, true);
+                echo "
+                </div>
+              </li>
+              ";
+            } else {
                 // line 49
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["contact"], "phone2", [], "any", false, false, true, 49), 49, $this->source), "html", null, true);
+                echo "              ";
+            }
+            // line 50
+            echo "
+              ";
+            // line 51
+            if ((twig_get_attribute($this->env, $this->source, $context["contact"], "phone2", [], "any", false, false, true, 51) == true)) {
+                // line 52
+                echo "              <li class=\"single-info-item\">
+                <div class=\"icon\">
+                  <i class=\"fa fa-phone\"></i>
+                </div>
+                <div class=\"details\">
+                  (+996) ";
+                // line 57
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["contact"], "phone2", [], "any", false, false, true, 57), 57, $this->source), "html", null, true);
                 echo "
                 </div>
               </li>
               ";
             } else {
-                // line 53
-                echo "              ";
-            }
-            // line 54
-            echo "
-              ";
-            // line 55
-            if ((twig_get_attribute($this->env, $this->source, $context["contact"], "user_email1", [], "any", false, false, true, 55) == true)) {
-                // line 56
-                echo "              <li class=\"single-info-item\">
-                <div class=\"icon\">
-                  <i class=\"fa fa-map-marker\"></i>
-                </div>
-                <div class=\"details\">
-                  ";
                 // line 61
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["contact"], "user_email1", [], "any", false, false, true, 61), 61, $this->source), "html", null, true);
-                echo "
-                </div>
-              </li>
-              ";
-            } else {
-                // line 65
                 echo "              ";
             }
-            // line 66
+            // line 62
             echo "
               ";
-            // line 67
-            if ((twig_get_attribute($this->env, $this->source, $context["contact"], "user_email2", [], "any", false, false, true, 67) == true)) {
-                // line 68
+            // line 63
+            if ((twig_get_attribute($this->env, $this->source, $context["contact"], "user_email1", [], "any", false, false, true, 63) == true)) {
+                // line 64
                 echo "              <li class=\"single-info-item\">
                 <div class=\"icon\">
                   <i class=\"fa fa-map-marker\"></i>
                 </div>
                 <div class=\"details\">
                   ";
-                // line 73
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["contact"], "user_email2", [], "any", false, false, true, 73), 73, $this->source), "html", null, true);
+                // line 69
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["contact"], "user_email1", [], "any", false, false, true, 69), 69, $this->source), "html", null, true);
                 echo "
                 </div>
               </li>
               ";
             } else {
-                // line 77
+                // line 73
                 echo "              ";
             }
-            // line 78
+            // line 74
+            echo "
+              ";
+            // line 75
+            if ((twig_get_attribute($this->env, $this->source, $context["contact"], "user_email2", [], "any", false, false, true, 75) == true)) {
+                // line 76
+                echo "              <li class=\"single-info-item\">
+                <div class=\"icon\">
+                  <i class=\"fa fa-map-marker\"></i>
+                </div>
+                <div class=\"details\">
+                  ";
+                // line 81
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["contact"], "user_email2", [], "any", false, false, true, 81), 81, $this->source), "html", null, true);
+                echo "
+                </div>
+              </li>
+              ";
+            } else {
+                // line 85
+                echo "              ";
+            }
+            // line 86
             echo "
               ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['contact'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 80
+        // line 88
         echo "            </ul>
             <ul class=\"footer-social\">
               ";
-        // line 82
+        // line 90
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 82), "social", [], "any", false, false, true, 82));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, true, 90), "social", [], "any", false, false, true, 90));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 83
+            // line 91
             echo "              <li><a href=\"";
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["item"], "url", [], "any", false, false, true, 83), 83, $this->source), "html", null, true);
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["item"], "url", [], "any", false, false, true, 91), 91, $this->source), "html", null, true);
             echo "\"><i class=\"";
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["item"], "awesome_icon", [], "any", false, false, true, 83), 83, $this->source), "html", null, true);
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["item"], "awesome_icon", [], "any", false, false, true, 91), 91, $this->source), "html", null, true);
             echo "\"></i></a></li>
               ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 85
+        // line 93
         echo "            </ul>
           </div>
         </div>
@@ -236,65 +260,68 @@ class __TwigTemplate_63d6fa7e990ff8fe986466c01c9d7421b1de755fe069d55679fb59a23d6
           <div class=\"row\">
             <div class=\"col-lg-3 col-xl-3 offset-xl-1\">
               <div class=\"footer-widget widget widget_nav_menu\">
-                <h4 class=\"widget-title\">Полезные ссылки</h4>
+                <h4 class=\"widget-title\">";
+        // line 100
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Полезные ссылки"]);
+        echo "</h4>
                 ";
-        // line 93
-        if (twig_get_attribute($this->env, $this->source, ($context["staticMenu"] ?? null), "menuItems", [], "any", false, false, true, 93)) {
-            // line 94
+        // line 101
+        if (twig_get_attribute($this->env, $this->source, ($context["staticMenu"] ?? null), "menuItems", [], "any", false, false, true, 101)) {
+            // line 102
             echo "                <ul class=\"footer-useful-links\">
                   ";
-            // line 95
+            // line 103
             $context['__cms_partial_params'] = [];
-            $context['__cms_partial_params']['items'] = twig_get_attribute($this->env, $this->source, ($context["staticMenu"] ?? null), "menuItems", [], "any", false, false, true, 95)            ;
+            $context['__cms_partial_params']['items'] = twig_get_attribute($this->env, $this->source, ($context["staticMenu"] ?? null), "menuItems", [], "any", false, false, true, 103)            ;
             echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction((($context["staticMenu"] ?? null) . "::items")            , $context['__cms_partial_params']            , true            );
             unset($context['__cms_partial_params']);
-            // line 96
+            // line 104
             echo "                </ul>
                 ";
         }
-        // line 98
+        // line 106
         echo "
               </div>
             </div>
             <div class=\"col-lg-3\">
               <div class=\"footer-widget widget widget_nav_menu\">
-                <h4 class=\"widget-title\">Take action</h4>
+                <h4 class=\"widget-title\">";
+        // line 111
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Полезные ссылки"]);
+        echo "</h4>
                 ";
-        // line 104
-        if (twig_get_attribute($this->env, $this->source, ($context["staticMenu"] ?? null), "menuItems", [], "any", false, false, true, 104)) {
-            // line 105
+        // line 112
+        if (twig_get_attribute($this->env, $this->source, ($context["staticMenu"] ?? null), "menuItems", [], "any", false, false, true, 112)) {
+            // line 113
             echo "                <ul class=\"footer-useful-links\">
                   ";
-            // line 106
+            // line 114
             $context['__cms_partial_params'] = [];
-            $context['__cms_partial_params']['items'] = twig_get_attribute($this->env, $this->source, ($context["staticMenu2"] ?? null), "menuItems", [], "any", false, false, true, 106)            ;
+            $context['__cms_partial_params']['items'] = twig_get_attribute($this->env, $this->source, ($context["staticMenu2"] ?? null), "menuItems", [], "any", false, false, true, 114)            ;
             echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction((($context["staticMenu2"] ?? null) . "::items")            , $context['__cms_partial_params']            , true            );
             unset($context['__cms_partial_params']);
-            // line 107
+            // line 115
             echo "                </ul>
                 ";
         }
-        // line 109
+        // line 117
         echo "              </div>
             </div>
             <div class=\"col-lg-5\">
               <div class=\"footer-widget widget\">
-                <h4 class=\"widget-title\">Подписка на рассылку новостей</h4>
-                <div class=\"subscribe-form\">
-                  <div class=\"input-group\">
-                    <input type=\"text\" class=\"form-control\" placeholder=\"Введите Ваш email\">
-                    <span class=\"input-group-btn\">
-                      <button class=\"btn btn-default submit-btn\" type=\"button\"><i
-                          class=\"flaticon-sent-mail\"></i></button>
-                    </span>
-                  </div>
-                </div>
-                <p class=\"description\">Мы нигде не раскрываем вашу почту..</p>
+                <h4 class=\"widget-title\">";
+        // line 121
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Лента Instagram"]);
+        echo "</h4>
+                <div id=\"instagram-feed1\"></div>
               </div>
             </div>
             <div class=\"col-xl-11 offset-xl-1\">
               <div class=\"copyright-area-inner copyright-sm margin-top-35\">
-                &copy; Политическая партия Табылга
+                &copy; ";
+        // line 127
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Политическая партия Табылга"]);
+        echo "
               </div>
             </div>
           </div>
@@ -318,7 +345,7 @@ class __TwigTemplate_63d6fa7e990ff8fe986466c01c9d7421b1de755fe069d55679fb59a23d6
 
     public function getDebugInfo()
     {
-        return array (  278 => 109,  274 => 107,  269 => 106,  266 => 105,  264 => 104,  256 => 98,  252 => 96,  247 => 95,  244 => 94,  242 => 93,  232 => 85,  221 => 83,  217 => 82,  213 => 80,  206 => 78,  203 => 77,  196 => 73,  189 => 68,  187 => 67,  184 => 66,  181 => 65,  174 => 61,  167 => 56,  165 => 55,  162 => 54,  159 => 53,  152 => 49,  145 => 44,  143 => 43,  140 => 42,  137 => 41,  130 => 37,  123 => 32,  121 => 31,  118 => 30,  115 => 29,  108 => 25,  101 => 20,  99 => 19,  96 => 18,  92 => 17,  88 => 15,  85 => 14,  79 => 12,  77 => 11,  72 => 9,  62 => 1,);
+        return array (  323 => 127,  314 => 121,  308 => 117,  304 => 115,  299 => 114,  296 => 113,  294 => 112,  290 => 111,  283 => 106,  279 => 104,  274 => 103,  271 => 102,  269 => 101,  265 => 100,  256 => 93,  245 => 91,  241 => 90,  237 => 88,  230 => 86,  227 => 85,  220 => 81,  213 => 76,  211 => 75,  208 => 74,  205 => 73,  198 => 69,  191 => 64,  189 => 63,  186 => 62,  183 => 61,  176 => 57,  169 => 52,  167 => 51,  164 => 50,  161 => 49,  154 => 45,  147 => 40,  145 => 39,  142 => 38,  139 => 37,  134 => 34,  128 => 32,  122 => 30,  120 => 29,  113 => 24,  111 => 23,  108 => 22,  104 => 21,  100 => 19,  97 => 18,  91 => 16,  89 => 15,  86 => 14,  80 => 12,  74 => 10,  72 => 9,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -331,7 +358,11 @@ class __TwigTemplate_63d6fa7e990ff8fe986466c01c9d7421b1de755fe069d55679fb59a23d6
         <div class=\"col-xl-4\">
           <div class=\"footer-widget widget contact-widget\">
             <a href=\"/\" class=\"footer-logo\">
-              <img src=\"{{this.theme.logoFooter.path}}\" alt=\"footer logo\">
+              {% if activeLocale == 'ru' %}
+              <img src=\"{{this.theme.logoFooterRu.path}}\" alt=\"footer logo\">
+              {% else %}
+              <img src=\"{{this.theme.logoFooterKg.path}}\" alt=\"footer logo\">
+              {% endif %}
             </a>
             {% if this.theme.site_description == true %}
             {{this.theme.site_description | raw}}
@@ -347,7 +378,11 @@ class __TwigTemplate_63d6fa7e990ff8fe986466c01c9d7421b1de755fe069d55679fb59a23d6
                   <i class=\"fa fa-envelope\"></i>
                 </div>
                 <div class=\"details\">
+                  {% if activeLocale == 'ru' %}
                   {{contact.address}}
+                  {% else %}
+                  {{contact.addressKg}}
+                  {% endif %}
                 </div>
               </li>
               {% else %}
@@ -414,7 +449,7 @@ class __TwigTemplate_63d6fa7e990ff8fe986466c01c9d7421b1de755fe069d55679fb59a23d6
           <div class=\"row\">
             <div class=\"col-lg-3 col-xl-3 offset-xl-1\">
               <div class=\"footer-widget widget widget_nav_menu\">
-                <h4 class=\"widget-title\">Полезные ссылки</h4>
+                <h4 class=\"widget-title\">{{'Полезные ссылки'|_}}</h4>
                 {% if staticMenu.menuItems %}
                 <ul class=\"footer-useful-links\">
                   {% partial staticMenu ~ \"::items\" items=staticMenu.menuItems %}
@@ -425,7 +460,7 @@ class __TwigTemplate_63d6fa7e990ff8fe986466c01c9d7421b1de755fe069d55679fb59a23d6
             </div>
             <div class=\"col-lg-3\">
               <div class=\"footer-widget widget widget_nav_menu\">
-                <h4 class=\"widget-title\">Take action</h4>
+                <h4 class=\"widget-title\">{{'Полезные ссылки'|_}}</h4>
                 {% if staticMenu.menuItems %}
                 <ul class=\"footer-useful-links\">
                   {% partial staticMenu2 ~ \"::items\" items=staticMenu2.menuItems %}
@@ -435,22 +470,13 @@ class __TwigTemplate_63d6fa7e990ff8fe986466c01c9d7421b1de755fe069d55679fb59a23d6
             </div>
             <div class=\"col-lg-5\">
               <div class=\"footer-widget widget\">
-                <h4 class=\"widget-title\">Подписка на рассылку новостей</h4>
-                <div class=\"subscribe-form\">
-                  <div class=\"input-group\">
-                    <input type=\"text\" class=\"form-control\" placeholder=\"Введите Ваш email\">
-                    <span class=\"input-group-btn\">
-                      <button class=\"btn btn-default submit-btn\" type=\"button\"><i
-                          class=\"flaticon-sent-mail\"></i></button>
-                    </span>
-                  </div>
-                </div>
-                <p class=\"description\">Мы нигде не раскрываем вашу почту..</p>
+                <h4 class=\"widget-title\">{{'Лента Instagram'|_}}</h4>
+                <div id=\"instagram-feed1\"></div>
               </div>
             </div>
             <div class=\"col-xl-11 offset-xl-1\">
               <div class=\"copyright-area-inner copyright-sm margin-top-35\">
-                &copy; Политическая партия Табылга
+                &copy; {{'Политическая партия Табылга'|_}}
               </div>
             </div>
           </div>

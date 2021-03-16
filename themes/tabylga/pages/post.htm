@@ -1,9 +1,18 @@
-title = "Blog post"
+title = "Блог-пост"
 url = "/blog/post/:slug"
 layout = "default"
 is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[viewBag]
+localeTitle[ru] = "Блог-пост"
+localeTitle[kg] = "Блог-пост"
+localeUrl[kg] = "/blog/post/:slug"
 
 [blogPost]
 slug = "{{ :slug }}"
@@ -25,6 +34,11 @@ noPostsMessage = "Записей не найдено"
 sortOrder = "published_at desc"
 categoryPage = "blog-category"
 postPage = "post"
+
+[commentsPost]
+
+[siteSearchInclude]
+
 ==
 <div class="blog-area margin-top-120">
   <div class="container">
@@ -41,7 +55,7 @@ postPage = "post"
             <img src="{{image.path | resize(810, false, { mode: 'crop', quality: '80', extension: 'jpg' })}}" alt="">
             {% endfor %}
             <div class="blog-date-box">
-              <h4>{{ post.published_at |date('d') }}<br><span>{{ post.published_at |date('M') }}</span></h4>
+              <h4>{{ post.published_at |date('d') }}<br><span>{{ post.published_at |rudate('%BP') }}</span></h4>
             </div>
           </div>
           <div class="b-content">
@@ -49,119 +63,40 @@ postPage = "post"
               <span class="causes-tag mr-3">
                 {% for cat in post.categories %}
                 <a href="/blog/category/{{cat.slug}}">{{cat.name}}</a>
-                {%endfor %}</span>
+                {%endfor %}
+              </span>
+              <ul>
+                <li><span>{{'Поделиться'|_}}</span></li>
+                <li>
+                  <script src="https://yastatic.net/share2/share.js"></script>
+                  <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-limit="0"
+                    data-more-button-type="short"
+                    data-services="vkontakte,facebook,odnoklassniki,telegram,twitter,whatsapp,skype"></div>
+                </li>
+              </ul>
             </div>
             <h4 class="section-title">{{post.title}}</h4>
             {{post.content_html | raw }}
           </div>
         </div>
         <div id="comments" class="comments-area comments-area-wrapper">
-          <h4 class="comments-title">5 Comments</h4>
-          <ul class="comment-list">
-            <li class="comment">
-              <div class="single-comment justify-content-between d-flex">
-                <div class="user justify-content-between d-flex">
-                  <div class="thumb">
-                    <img alt="" src="assets/img/blog/c1.png" class="avatar">
-                  </div>
-                  <div class="desc">
-                    <div class="d-flex justify-content-between comment_title">
-                      <div class="d-flex align-items-center">
-                        <h5>Monalisa Khatun <br><span>5 June 2019</span></h5>
-                      </div>
-                      <div class="c-action">
-                        <ul>
-                          <li><a href=""><i class="fa fa-heart"></i></a></li>
-                          <li><a href=""><i class="fa fa-reply"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="comment-content">
-                      <p>Sometimes ‘short and sweet’ workouts are all you need. If you've done a HIIT workout before you
-                        would agree. Prepared do an dissuade be so whatever steepest.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <ul class="children">
-                <li class="comment">
-                  <div class="single-comment justify-content-between d-flex">
-                    <div class="user justify-content-between d-flex">
-                      <div class="thumb">
-                        <img alt="" src="assets/img/blog/c2.png" class="avatar">
-                      </div>
-                      <div class="desc">
-                        <div class="d-flex justify-content-between comment_title">
-                          <div class="d-flex align-items-center">
-                            <h5>Naeem <br><span>23 Dec 2019</span></h5>
-                          </div>
-                          <div class="c-action">
-                            <ul>
-                              <li><a href=""><i class="fa fa-heart"></i></a></li>
-                              <li><a href=""><i class="fa fa-reply"></i></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="comment-content">
-                          <p>Sometimes ‘short and sweet’ workouts are all you need. If you've done a HIIT workout before
-                            you would agree. Prepared do an dissuade be so whatever steepest.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
+          {% set posts = commentsPost.posts %}
+
+          <div class="col-xs-6" id="comments-content">
+            <h4 class="comments-title">
+              ({{ commentsPost.count }}) комментарий
+            </h4>
+            <div class="comments">
+              <ul>
+                {% partial "commentsPost::list" posts=posts %}
               </ul>
-            </li>
-            <li class="comment">
-              <div class="single-comment justify-content-between d-flex">
-                <div class="user justify-content-between d-flex">
-                  <div class="thumb">
-                    <img alt="" src="assets/img/blog/c3.png" class="avatar">
-                  </div>
-                  <div class="desc">
-                    <div class="d-flex justify-content-between comment_title">
-                      <div class="d-flex align-items-center">
-                        <h5>Asade <br><span>9 May 2019</span></h5>
-                      </div>
-                      <div class="c-action">
-                        <ul>
-                          <li><a href=""><i class="fa fa-heart"></i></a></li>
-                          <li><a href=""><i class="fa fa-reply"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="comment-content">
-                      <p>Sometimes ‘short and sweet’ workouts are all you need. If you've done a HIIT workout before you
-                        would agree. Prepared do an dissuade be so whatever steepest.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div id="respond" class="comment-respond">
-            <h3 class="comment-reply-title">Write a comment</h3>
-            <form id="comment_form" class="commentform">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input type="text" id="author" name="author" value="" class="form-control" placeholder="Your name">
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" value="" placeholder="Your email">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group margin-bottom-30">
-                <textarea name="comment" id="comment" class="form-control w-100" cols="30" rows="9"
-                  placeholder="Type Your Comment*"></textarea>
-              </div>
-              <div class="form-submit">
-                <button type="submit" class="btn btn-custom-primary">Post comment</button>
-              </div>
-            </form>
+            </div>
+            {% if(user or commentsPost.settings.allow_guest) %}
+
+            {% partial "commentsPost::form" %}
+
+            {% endif %}
+
           </div>
         </div>
       </div>

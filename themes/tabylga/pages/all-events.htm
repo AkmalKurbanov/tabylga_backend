@@ -1,0 +1,82 @@
+title = "Все события"
+url = "/all-events"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[viewBag]
+localeTitle[ru] = "Все события"
+localeTitle[kg] = "Бардык окуялар"
+localeUrl[kg] = "/all-events"
+
+[builderList]
+modelClass = "Akmal\Events\Models\Event"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "event-detail"
+detailsKeyColumn = "slug"
+detailsUrlParameter = "slug"
+pageNumber = "{{ :page }}"
+sortColumn = "date"
+sortDirection = "asc"
+
+[siteSearchInclude]
+==
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+{% set currentDate = 'now' | date('Y-m-d') %}
+
+
+<div class="container">
+
+  <div class="title-left-style margin-top-40">
+    <p class="section-subtitle">{{'Предстоящие события'|_}}</p>
+    <h2 class="section-title">{{'Все события'|_}}</h2>
+  </div>
+
+  <div class="upcoming-area margin-top-100">
+    <div class="row">
+      {% for record in records %}
+
+      {% if record.date >= currentDate %}
+      <div class="col-lg-6">
+        <div class="upcoming-box">
+          <div class="ub-image">
+            <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}" style="background-image:
+              url({{record.img.path | resize(500, false, { mode: 'crop', quality: '80', extension: 'jpg' })}});">
+            </a>
+          </div>
+
+          <div class="date-box">
+            <span class="date">{{record.date | date('d')}}</span>
+            <span class="month">{{record.date | rudate('%BP')}}</span>
+          </div>
+
+          <div class="ub-content">
+            <h4><a
+                href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">{{record.title}}</a>
+            </h4>
+            <p><i class="fa fa-map-marker"></i> {{record.location}}</p>
+          </div>
+        </div>
+      </div>
+
+      {% else %}
+
+      {% endif %}
+
+      {% endfor %}
+    </div>
+  </div>
+</div>

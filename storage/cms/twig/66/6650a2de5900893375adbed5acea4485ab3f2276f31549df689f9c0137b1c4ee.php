@@ -30,13 +30,13 @@ class __TwigTemplate_affb1a28dca6daf2250c535f4b309699bb35ac621e3cf0c2b750e91e121
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array();
+        $filters = array("_" => 4);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 [],
-                [],
+                ['_'],
                 []
             );
         } catch (SecurityError $e) {
@@ -61,8 +61,17 @@ class __TwigTemplate_affb1a28dca6daf2250c535f4b309699bb35ac621e3cf0c2b750e91e121
         // line 1
         echo "<div class=\"jumbotron\">
     <div class=\"container\">
-        <h1>Page not found</h1>
-        <p>We're sorry, but the page you requested cannot be found.</p>
+        <h1>404</h1>
+        <p style=\"font-size: 20px;\">";
+        // line 4
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Сожалеем, но запрошенная вами страница не может быть найдена."]);
+        echo "</p>
+        <div class=\"btn btn-custom-primary margin-top-15\">
+            <a href=\"/\">";
+        // line 6
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Главная"]);
+        echo "</a>
+        </div>
     </div>
 </div>";
     }
@@ -72,17 +81,25 @@ class __TwigTemplate_affb1a28dca6daf2250c535f4b309699bb35ac621e3cf0c2b750e91e121
         return "C:\\work\\OpenServer\\domains\\tabylga.loc/themes/tabylga/pages/404.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  62 => 1,);
+        return array (  72 => 6,  67 => 4,  62 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<div class=\"jumbotron\">
     <div class=\"container\">
-        <h1>Page not found</h1>
-        <p>We're sorry, but the page you requested cannot be found.</p>
+        <h1>404</h1>
+        <p style=\"font-size: 20px;\">{{'Сожалеем, но запрошенная вами страница не может быть найдена.'|_}}</p>
+        <div class=\"btn btn-custom-primary margin-top-15\">
+            <a href=\"/\">{{'Главная'|_}}</a>
+        </div>
     </div>
 </div>", "C:\\work\\OpenServer\\domains\\tabylga.loc/themes/tabylga/pages/404.htm", "");
     }

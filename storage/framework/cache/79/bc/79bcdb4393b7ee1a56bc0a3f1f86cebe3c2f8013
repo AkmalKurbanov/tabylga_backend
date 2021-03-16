@@ -1,15 +1,32 @@
-1614378259a:1:{s:7:"404.htm";a:8:{s:8:"fileName";s:7:"404.htm";s:7:"content";s:239:"title = "Page not found (404)"
+1615910985a:1:{s:7:"404.htm";a:16:{s:8:"fileName";s:7:"404.htm";s:7:"content";s:726:"title = "Страница не найдена (404)"
 url = "/404"
 layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[viewBag]
+localeTitle[kg] = "Барак табылган жок (404)"
+localeUrl[kg] = "/404"
 ==
 <div class="jumbotron">
     <div class="container">
-        <h1>Page not found</h1>
-        <p>We're sorry, but the page you requested cannot be found.</p>
+        <h1>404</h1>
+        <p style="font-size: 20px;">{{'Сожалеем, но запрошенная вами страница не может быть найдена.'|_}}</p>
+        <div class="btn btn-custom-primary margin-top-15">
+            <a href="/">{{'Главная'|_}}</a>
+        </div>
     </div>
-</div>";s:5:"mtime";i:1613829389;s:6:"markup";s:173:"<div class="jumbotron">
+</div>";s:5:"mtime";i:1615910384;s:6:"markup";s:384:"<div class="jumbotron">
     <div class="container">
-        <h1>Page not found</h1>
-        <p>We're sorry, but the page you requested cannot be found.</p>
+        <h1>404</h1>
+        <p style="font-size: 20px;">{{'Сожалеем, но запрошенная вами страница не может быть найдена.'|_}}</p>
+        <div class="btn btn-custom-primary margin-top-15">
+            <a href="/">{{'Главная'|_}}</a>
+        </div>
     </div>
-</div>";s:4:"code";N;s:5:"title";s:20:"Page not found (404)";s:3:"url";s:4:"/404";s:6:"layout";s:7:"default";}}
+</div>";s:4:"code";N;s:5:"title";s:42:"Страница не найдена (404)";s:3:"url";s:4:"/404";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:8:"child_of";s:13:"mey_no_parent";s:10:"hide_crumb";s:1:"0";s:18:"remove_crumb_trail";s:1:"0";s:14:"crumb_disabled";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:1:{s:2:"kg";s:40:"Барак табылган жок (404)";}s:9:"localeUrl";a:1:{s:2:"kg";s:4:"/404";}}}}

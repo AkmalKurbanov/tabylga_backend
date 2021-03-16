@@ -1,9 +1,18 @@
-1614378259a:1:{s:10:"search.htm";a:12:{s:8:"fileName";s:10:"search.htm";s:7:"content";s:937:"title = "Search"
+1615910701a:1:{s:10:"search.htm";a:17:{s:8:"fileName";s:10:"search.htm";s:7:"content";s:1124:"title = "Поиск"
 url = "/search"
 layout = "static-layout"
 is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[viewBag]
+localeTitle[ru] = "Поиск"
+localeTitle[kg] = "Издөө"
+localeUrl[kg] = "/search"
 
 [searchResults]
 resultsPerPage = 10
@@ -26,10 +35,10 @@ visitPageMessage = "Перейти"
     {% partial searchResults ~ '::pagination.htm' results = results %}
 
     <div class="btn-wrapper align-self-center">
-      <a class="btn btn-custom-primary" href="/">Главная страница</a>
+      <a class="btn btn-custom-primary" href="/">{{'Главная'|_}}</a>
     </div>
   </div>
-</div>";s:5:"mtime";i:1614192519;s:6:"markup";s:597:"<div class="search-results">
+</div>";s:5:"mtime";i:1615809121;s:6:"markup";s:588:"<div class="search-results">
   <div class="container">
     {% set results = searchResults.results %}
 
@@ -44,7 +53,7 @@ visitPageMessage = "Перейти"
     {% partial searchResults ~ '::pagination.htm' results = results %}
 
     <div class="btn-wrapper align-self-center">
-      <a class="btn btn-custom-primary" href="/">Главная страница</a>
+      <a class="btn btn-custom-primary" href="/">{{'Главная'|_}}</a>
     </div>
   </div>
-</div>";s:4:"code";N;s:5:"title";s:6:"Search";s:3:"url";s:7:"/search";s:6:"layout";s:13:"static-layout";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:13:"searchResults";a:4:{s:14:"resultsPerPage";s:2:"10";s:17:"showProviderBadge";s:1:"1";s:16:"noResultsMessage";s:89:"К сожалению, по вашему запросу ничего не найдено.";s:16:"visitPageMessage";s:14:"Перейти";}}}
+</div>";s:4:"code";N;s:5:"title";s:10:"Поиск";s:3:"url";s:7:"/search";s:6:"layout";s:13:"static-layout";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:8:"child_of";s:13:"mey_no_parent";s:10:"hide_crumb";s:1:"0";s:18:"remove_crumb_trail";s:1:"0";s:14:"crumb_disabled";s:1:"0";s:7:"viewBag";a:2:{s:11:"localeTitle";a:2:{s:2:"ru";s:10:"Поиск";s:2:"kg";s:10:"Издөө";}s:9:"localeUrl";a:1:{s:2:"kg";s:7:"/search";}}s:13:"searchResults";a:4:{s:14:"resultsPerPage";s:2:"10";s:17:"showProviderBadge";s:1:"1";s:16:"noResultsMessage";s:89:"К сожалению, по вашему запросу ничего не найдено.";s:16:"visitPageMessage";s:14:"Перейти";}}}

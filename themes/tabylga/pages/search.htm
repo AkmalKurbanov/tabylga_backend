@@ -1,9 +1,18 @@
-title = "Search"
+title = "Поиск"
 url = "/search"
 layout = "static-layout"
 is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[viewBag]
+localeTitle[ru] = "Поиск"
+localeTitle[kg] = "Издөө"
+localeUrl[kg] = "/search"
 
 [searchResults]
 resultsPerPage = 10
@@ -26,7 +35,7 @@ visitPageMessage = "Перейти"
     {% partial searchResults ~ '::pagination.htm' results = results %}
 
     <div class="btn-wrapper align-self-center">
-      <a class="btn btn-custom-primary" href="/">Главная страница</a>
+      <a class="btn btn-custom-primary" href="/">{{'Главная'|_}}</a>
     </div>
   </div>
 </div>

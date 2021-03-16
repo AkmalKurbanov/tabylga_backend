@@ -9,6 +9,11 @@ form:
       placeholder: Tabylga
       size: small
       span: left
+    main_banner_img:
+      label: Изображение главного экрана
+      type: fileupload
+      mode: image
+      span: left  
     site_description: 
       label: Краткое описание сайта
       placeholder: Девиз партии и ли что-то в этом роде.
@@ -21,8 +26,11 @@ form:
       form:
         fields:
           address: 
-            label: Адрес
-            placeholder: Кыргызстан, г.Каракол, ул. Ж.Жусаева (Горького) 87
+            label: Русская версия адреса
+            placeholder: г.Каракол, ул. Ж.Жусаева 87
+          addressKg: 
+            label: Кыргызская версия адреса
+            placeholder: Каракол ш., Ж.Жусаев к. 87
           phone1: 
             label: Телефон  
             placeholder: 550 999 999
@@ -36,17 +44,40 @@ form:
           user_email2:
             label: Втрая Email почта, если имеется 
             type: email
-            placeholder: email@tabylga.com         
-    logoHeader:
-      label: Логотип в шапке сайта 
+            placeholder: email@tabylga.com
+    map:
+      label: Карта (ссылка карты)                
+      placeholder: https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed
+    logoHeaderRu:
+      label: Русская версия логотипа в шапке сайта 
       type: fileupload
       mode: image
       span: left
-    logoFooter:
-      label: Логотип в подвале сайта
+    logoHeaderKg:
+      label: Кыргызская версия логотипа в шапке сайта 
       type: fileupload
       mode: image
       span: right
+    logoFooterRu:
+      label: Русская версия логотипа в подвале сайта
+      type: fileupload
+      mode: image
+      span: left
+    logoFooterKg:
+      label: Кыргызская версия логотипа в подвале сайта
+      type: fileupload
+      mode: image
+      span: right
+    logoSidebarRu:
+      label: Русская версия логотипа в сайдбаре сайта
+      type: fileupload
+      mode: image
+      span: left  
+    logoSidebarKg:
+      label: Кыргызская версия логотипа в сайдбаре сайта
+      type: fileupload
+      mode: image
+      span: right  
     social:
       type: repeater
       label: Социальные сети

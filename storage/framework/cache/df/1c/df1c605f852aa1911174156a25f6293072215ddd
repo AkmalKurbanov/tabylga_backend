@@ -1,10 +1,11 @@
-1614378457a:1:{s:15:"site/footer.htm";a:8:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:5158:"[viewBag]
+1615910701a:1:{s:15:"site/footer.htm";a:8:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:4969:"[viewBag]
 
 [staticMenu]
 code = "useful-links"
 
 [staticMenu staticMenu2]
 code = "additional-links"
+
 ==
 <!-- footer area start -->
 <footer class="footer-area footer-style-1 main-bg">
@@ -14,7 +15,11 @@ code = "additional-links"
         <div class="col-xl-4">
           <div class="footer-widget widget contact-widget">
             <a href="/" class="footer-logo">
-              <img src="{{this.theme.logoFooter.path}}" alt="footer logo">
+              {% if activeLocale == 'ru' %}
+              <img src="{{this.theme.logoFooterRu.path}}" alt="footer logo">
+              {% else %}
+              <img src="{{this.theme.logoFooterKg.path}}" alt="footer logo">
+              {% endif %}
             </a>
             {% if this.theme.site_description == true %}
             {{this.theme.site_description | raw}}
@@ -30,7 +35,11 @@ code = "additional-links"
                   <i class="fa fa-envelope"></i>
                 </div>
                 <div class="details">
+                  {% if activeLocale == 'ru' %}
                   {{contact.address}}
+                  {% else %}
+                  {{contact.addressKg}}
+                  {% endif %}
                 </div>
               </li>
               {% else %}
@@ -97,7 +106,7 @@ code = "additional-links"
           <div class="row">
             <div class="col-lg-3 col-xl-3 offset-xl-1">
               <div class="footer-widget widget widget_nav_menu">
-                <h4 class="widget-title">Полезные ссылки</h4>
+                <h4 class="widget-title">{{'Полезные ссылки'|_}}</h4>
                 {% if staticMenu.menuItems %}
                 <ul class="footer-useful-links">
                   {% partial staticMenu ~ "::items" items=staticMenu.menuItems %}
@@ -108,7 +117,7 @@ code = "additional-links"
             </div>
             <div class="col-lg-3">
               <div class="footer-widget widget widget_nav_menu">
-                <h4 class="widget-title">Take action</h4>
+                <h4 class="widget-title">{{'Полезные ссылки'|_}}</h4>
                 {% if staticMenu.menuItems %}
                 <ul class="footer-useful-links">
                   {% partial staticMenu2 ~ "::items" items=staticMenu2.menuItems %}
@@ -118,22 +127,13 @@ code = "additional-links"
             </div>
             <div class="col-lg-5">
               <div class="footer-widget widget">
-                <h4 class="widget-title">Подписка на рассылку новостей</h4>
-                <div class="subscribe-form">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Введите Ваш email">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default submit-btn" type="button"><i
-                          class="flaticon-sent-mail"></i></button>
-                    </span>
-                  </div>
-                </div>
-                <p class="description">Мы нигде не раскрываем вашу почту..</p>
+                <h4 class="widget-title">{{'Лента Instagram'|_}}</h4>
+                <div id="instagram-feed1"></div>
               </div>
             </div>
             <div class="col-xl-11 offset-xl-1">
               <div class="copyright-area-inner copyright-sm margin-top-35">
-                &copy; Политическая партия Табылга
+                &copy; {{'Политическая партия Табылга'|_}}
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@ code = "additional-links"
     </div>
   </div>
 </footer>
-<!-- footer area end -->";s:5:"mtime";i:1614377817;s:6:"markup";s:5049:"<!-- footer area start -->
+<!-- footer area end -->";s:5:"mtime";i:1615909452;s:6:"markup";s:4858:"<!-- footer area start -->
 <footer class="footer-area footer-style-1 main-bg">
   <div class="footer-top">
     <div class="container">
@@ -150,7 +150,11 @@ code = "additional-links"
         <div class="col-xl-4">
           <div class="footer-widget widget contact-widget">
             <a href="/" class="footer-logo">
-              <img src="{{this.theme.logoFooter.path}}" alt="footer logo">
+              {% if activeLocale == 'ru' %}
+              <img src="{{this.theme.logoFooterRu.path}}" alt="footer logo">
+              {% else %}
+              <img src="{{this.theme.logoFooterKg.path}}" alt="footer logo">
+              {% endif %}
             </a>
             {% if this.theme.site_description == true %}
             {{this.theme.site_description | raw}}
@@ -166,7 +170,11 @@ code = "additional-links"
                   <i class="fa fa-envelope"></i>
                 </div>
                 <div class="details">
+                  {% if activeLocale == 'ru' %}
                   {{contact.address}}
+                  {% else %}
+                  {{contact.addressKg}}
+                  {% endif %}
                 </div>
               </li>
               {% else %}
@@ -233,7 +241,7 @@ code = "additional-links"
           <div class="row">
             <div class="col-lg-3 col-xl-3 offset-xl-1">
               <div class="footer-widget widget widget_nav_menu">
-                <h4 class="widget-title">Полезные ссылки</h4>
+                <h4 class="widget-title">{{'Полезные ссылки'|_}}</h4>
                 {% if staticMenu.menuItems %}
                 <ul class="footer-useful-links">
                   {% partial staticMenu ~ "::items" items=staticMenu.menuItems %}
@@ -244,7 +252,7 @@ code = "additional-links"
             </div>
             <div class="col-lg-3">
               <div class="footer-widget widget widget_nav_menu">
-                <h4 class="widget-title">Take action</h4>
+                <h4 class="widget-title">{{'Полезные ссылки'|_}}</h4>
                 {% if staticMenu.menuItems %}
                 <ul class="footer-useful-links">
                   {% partial staticMenu2 ~ "::items" items=staticMenu2.menuItems %}
@@ -254,22 +262,13 @@ code = "additional-links"
             </div>
             <div class="col-lg-5">
               <div class="footer-widget widget">
-                <h4 class="widget-title">Подписка на рассылку новостей</h4>
-                <div class="subscribe-form">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Введите Ваш email">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default submit-btn" type="button"><i
-                          class="flaticon-sent-mail"></i></button>
-                    </span>
-                  </div>
-                </div>
-                <p class="description">Мы нигде не раскрываем вашу почту..</p>
+                <h4 class="widget-title">{{'Лента Instagram'|_}}</h4>
+                <div id="instagram-feed1"></div>
               </div>
             </div>
             <div class="col-xl-11 offset-xl-1">
               <div class="copyright-area-inner copyright-sm margin-top-35">
-                &copy; Политическая партия Табылга
+                &copy; {{'Политическая партия Табылга'|_}}
               </div>
             </div>
           </div>

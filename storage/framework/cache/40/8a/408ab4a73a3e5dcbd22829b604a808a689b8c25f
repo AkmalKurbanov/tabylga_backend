@@ -1,4 +1,4 @@
-1614378345a:1:{s:15:"site/header.htm";a:7:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1429:"[viewBag]
+1615910701a:1:{s:15:"site/header.htm";a:7:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:2011:"[viewBag]
 
 [staticMenu]
 code = "menu-header"
@@ -17,7 +17,13 @@ code = "menu-header"
         </button>
       </div>
       <div class="logo">
-        <a href="/"> <img src="{{this.theme.logoHeader.path}}" alt="logo"></a>
+        <a href="/">
+          {% if activeLocale == 'ru' %}
+          <img src="{{this.theme.logoHeaderRu.path}}" alt="logo">
+          {% else %}
+          <img src="{{this.theme.logoHeaderKg.path}}" alt="logo">
+          {% endif %}
+        </a>
       </div>
       <div class="collapse navbar-collapse" id="billatrail_main_menu">
         {% if staticMenu.menuItems %}
@@ -34,12 +40,22 @@ code = "menu-header"
           <li class="menubar d-none d-lg-block" id="navigation-button">
             <a><i class="flaticon-menu-button"></i></a>
           </li>
+          <li class="localization">
+            {{ form_open() }}
+            <select name="locale" data-request="onSwitchLocale" class="form-control">
+              {% for code, name in locales %}
+              <option value="{{ code }}" {{ code == activeLocale ? 'selected' }}>{{ name }}</option>
+              {% endfor %}
+            </select>
+
+            {{ form_close() }}
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 </div>
-<!-- navbar end -->";s:5:"mtime";i:1614375866;s:6:"markup";s:1376:"<!-- navbar start -->
+<!-- navbar end -->";s:5:"mtime";i:1615891771;s:6:"markup";s:1958:"<!-- navbar start -->
 <div class="politix-navbar">
   <nav class="navbar navbar-area navbar-expand-lg nav-style-02">
     <div class="container nav-container">
@@ -53,7 +69,13 @@ code = "menu-header"
         </button>
       </div>
       <div class="logo">
-        <a href="/"> <img src="{{this.theme.logoHeader.path}}" alt="logo"></a>
+        <a href="/">
+          {% if activeLocale == 'ru' %}
+          <img src="{{this.theme.logoHeaderRu.path}}" alt="logo">
+          {% else %}
+          <img src="{{this.theme.logoHeaderKg.path}}" alt="logo">
+          {% endif %}
+        </a>
       </div>
       <div class="collapse navbar-collapse" id="billatrail_main_menu">
         {% if staticMenu.menuItems %}
@@ -69,6 +91,16 @@ code = "menu-header"
           </li>
           <li class="menubar d-none d-lg-block" id="navigation-button">
             <a><i class="flaticon-menu-button"></i></a>
+          </li>
+          <li class="localization">
+            {{ form_open() }}
+            <select name="locale" data-request="onSwitchLocale" class="form-control">
+              {% for code, name in locales %}
+              <option value="{{ code }}" {{ code == activeLocale ? 'selected' }}>{{ name }}</option>
+              {% endfor %}
+            </select>
+
+            {{ form_close() }}
           </li>
         </ul>
       </div>

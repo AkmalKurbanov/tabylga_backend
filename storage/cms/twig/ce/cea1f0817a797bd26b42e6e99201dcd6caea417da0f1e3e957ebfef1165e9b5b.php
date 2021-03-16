@@ -29,14 +29,14 @@ class __TwigTemplate_0fd18cb4473a11e0a9fa758dcac4ad071e2a5823e4368e450bbb985c46d
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("if" => 5, "for" => 28);
-        $filters = array("escape" => 30);
+        $tags = array("if" => 6, "for" => 9);
+        $filters = array("_" => 5, "escape" => 11);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 ['if', 'for'],
-                ['escape'],
+                ['_', 'escape'],
                 []
             );
         } catch (SecurityError $e) {
@@ -63,74 +63,33 @@ class __TwigTemplate_0fd18cb4473a11e0a9fa758dcac4ad071e2a5823e4368e450bbb985c46d
   <div class=\"row\">
     <div class=\"col-lg-12\">
       <div class=\"breadcrumb-inner padding-top-240\">
-        ";
+        <h1 class=\"page-title\">";
         // line 5
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 5), "url", [], "any", false, false, true, 5) == "/search")) {
-            // line 6
-            echo "        <h1 class=\"page-title\">Результаты поиска</h1>
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), [$this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 5), "title", [], "any", false, false, true, 5), 5, $this->source)]);
+        echo "</h1>
         ";
-        } else {
-            // line 8
-            echo "        ";
-        }
-        // line 9
-        echo "
-        ";
-        // line 10
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 10), "url", [], "any", false, false, true, 10) == "/blog/:page?")) {
-            // line 11
-            echo "        <h1 class=\"page-title\">Блог</h1>
-        ";
-        } else {
-            // line 13
-            echo "        ";
-        }
-        // line 14
-        echo "
-        ";
-        // line 15
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 15), "url", [], "any", false, false, true, 15) == "/blog/post/:slug")) {
-            // line 16
-            echo "        <h1 class=\"page-title\">Блог пост</h1>
-        ";
-        } else {
-            // line 18
-            echo "        ";
-        }
-        // line 19
-        echo "
-        ";
-        // line 20
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 20), "url", [], "any", false, false, true, 20) == "/blog/category/:slug/:page?")) {
-            // line 21
-            echo "        <h1 class=\"page-title\">Блог категории</h1>
-        ";
-        } else {
-            // line 23
-            echo "        ";
-        }
-        // line 24
-        echo "
-        ";
-        // line 25
+        // line 6
         if (($context["breadcrumbs"] ?? null)) {
-            // line 26
+            // line 7
             echo "        <ul class=\"page-list\">
-          <li><a href=\"index.html\">Главная</a></li>
+          <li><a href=\"/\">";
+            // line 8
+            echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Главная"]);
+            echo "</a></li>
           ";
-            // line 28
+            // line 9
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["breadcrumbs"] ?? null));
             foreach ($context['_seq'] as $context["_key"] => $context["breadcrumb"]) {
-                // line 29
+                // line 10
                 echo "          <li class=\"";
-                echo ((twig_get_attribute($this->env, $this->source, $context["breadcrumb"], "isActive", [], "any", false, false, true, 29)) ? ("active") : (""));
+                echo ((twig_get_attribute($this->env, $this->source, $context["breadcrumb"], "isActive", [], "any", false, false, true, 10)) ? ("active") : (""));
                 echo "\">
             <a href=\"";
-                // line 30
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["breadcrumb"], "url", [], "any", false, false, true, 30), 30, $this->source), "html", null, true);
+                // line 11
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["breadcrumb"], "url", [], "any", false, false, true, 11), 11, $this->source), "html", null, true);
                 echo "\">";
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["breadcrumb"], "title", [], "any", false, false, true, 30), 30, $this->source), "html", null, true);
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["breadcrumb"], "title", [], "any", false, false, true, 11), 11, $this->source), "html", null, true);
                 echo " </a>
           </li>
           ";
@@ -138,11 +97,11 @@ class __TwigTemplate_0fd18cb4473a11e0a9fa758dcac4ad071e2a5823e4368e450bbb985c46d
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['breadcrumb'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 33
+            // line 14
             echo "        </ul>
         ";
         }
-        // line 35
+        // line 16
         echo "      </div>
     </div>
   </div>
@@ -164,7 +123,7 @@ class __TwigTemplate_0fd18cb4473a11e0a9fa758dcac4ad071e2a5823e4368e450bbb985c46d
 
     public function getDebugInfo()
     {
-        return array (  146 => 35,  142 => 33,  131 => 30,  126 => 29,  122 => 28,  118 => 26,  116 => 25,  113 => 24,  110 => 23,  106 => 21,  104 => 20,  101 => 19,  98 => 18,  94 => 16,  92 => 15,  89 => 14,  86 => 13,  82 => 11,  80 => 10,  77 => 9,  74 => 8,  70 => 6,  68 => 5,  62 => 1,);
+        return array (  105 => 16,  101 => 14,  90 => 11,  85 => 10,  81 => 9,  77 => 8,  74 => 7,  72 => 6,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -173,29 +132,10 @@ class __TwigTemplate_0fd18cb4473a11e0a9fa758dcac4ad071e2a5823e4368e450bbb985c46d
   <div class=\"row\">
     <div class=\"col-lg-12\">
       <div class=\"breadcrumb-inner padding-top-240\">
-        {% if this.page.url == '/search' %}
-        <h1 class=\"page-title\">Результаты поиска</h1>
-        {% else %}
-        {% endif %}
-
-        {% if this.page.url == '/blog/:page?' %}
-        <h1 class=\"page-title\">Блог</h1>
-        {% else %}
-        {% endif %}
-
-        {% if this.page.url == '/blog/post/:slug' %}
-        <h1 class=\"page-title\">Блог пост</h1>
-        {% else %}
-        {% endif %}
-
-        {% if this.page.url == '/blog/category/:slug/:page?' %}
-        <h1 class=\"page-title\">Блог категории</h1>
-        {% else %}
-        {% endif %}
-
+        <h1 class=\"page-title\">{{this.page.title|_}}</h1>
         {% if breadcrumbs %}
         <ul class=\"page-list\">
-          <li><a href=\"index.html\">Главная</a></li>
+          <li><a href=\"/\">{{'Главная'|_}}</a></li>
           {% for breadcrumb in breadcrumbs %}
           <li class=\"{{ breadcrumb.isActive ? 'active' : '' }}\">
             <a href=\"{{ breadcrumb.url }}\">{{ breadcrumb.title }} </a>

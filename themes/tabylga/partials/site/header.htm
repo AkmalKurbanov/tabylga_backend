@@ -17,7 +17,13 @@ code = "menu-header"
         </button>
       </div>
       <div class="logo">
-        <a href="/"> <img src="{{this.theme.logoHeader.path}}" alt="logo"></a>
+        <a href="/">
+          {% if activeLocale == 'ru' %}
+          <img src="{{this.theme.logoHeaderRu.path}}" alt="logo">
+          {% else %}
+          <img src="{{this.theme.logoHeaderKg.path}}" alt="logo">
+          {% endif %}
+        </a>
       </div>
       <div class="collapse navbar-collapse" id="billatrail_main_menu">
         {% if staticMenu.menuItems %}
@@ -33,6 +39,16 @@ code = "menu-header"
           </li>
           <li class="menubar d-none d-lg-block" id="navigation-button">
             <a><i class="flaticon-menu-button"></i></a>
+          </li>
+          <li class="localization">
+            {{ form_open() }}
+            <select name="locale" data-request="onSwitchLocale" class="form-control">
+              {% for code, name in locales %}
+              <option value="{{ code }}" {{ code == activeLocale ? 'selected' }}>{{ name }}</option>
+              {% endfor %}
+            </select>
+
+            {{ form_close() }}
           </li>
         </ul>
       </div>

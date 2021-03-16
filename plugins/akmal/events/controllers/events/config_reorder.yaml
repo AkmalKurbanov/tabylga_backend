@@ -1,0 +1,4 @@
+title: Events
+modelClass: Akmal\Events\Models\Event
+toolbar:
+    buttons: reorder_toolbar

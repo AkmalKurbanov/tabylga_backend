@@ -1,11 +1,20 @@
-title = "Blog"
+title = "Блог"
 url = "/blog/:page?"
 layout = "default"
 is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
 
 [siteSearchInclude]
+
+[viewBag]
+localeTitle[ru] = "Блог"
+localeTitle[kg] = "Блог"
+localeUrl[kg] = "/blog/:page?"
 
 [blogPosts]
 pageNumber = "{{ :page }}"
@@ -37,7 +46,7 @@ postPage = "post"
                   {% endfor %}
                 </a>
                 <div class="blog-date-box">
-                  <h4>{{ post.published_at |date('d') }}<br><span>{{ post.published_at |date('M') }}</span></h4>
+                  <h4>{{ post.published_at |date('d') }}<br><span>{{ post.published_at |rudate('%BP') }}</span></h4>
                 </div>
               </div>
               <div class="b-content">
@@ -48,7 +57,7 @@ postPage = "post"
                     {%endfor %}
                   </span>
                   <ul>
-                    <li><span>Поделиться</span></li>
+                    <li><span>{{'Поделиться'|_}}</span></li>
                     <li>
                       <script src="https://yastatic.net/share2/share.js"></script>
                       <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-limit="0"
@@ -61,7 +70,7 @@ postPage = "post"
                 </h4>
                 <p>{{ str_words(post.content_html | raw, 30) }}</p>
                 <div class="btn-wrapper">
-                  <a href="{{ post.url }}">Подробнее</a> ➝
+                  <a href="{{ post.url }}">{{'Подробнее'|_}}</a> ➝
                 </div>
               </div>
             </div>

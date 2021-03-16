@@ -1,10 +1,20 @@
-title = "Blog category"
+title = "Категории блога"
 url = "/blog/category/:slug/:page?"
 layout = "default"
-meta_title = "asdsadsa dsa dsad sa"
 is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[viewBag]
+localeTitle[ru] = "Категории блога"
+localeTitle[kg] = "Блог категориялары"
+localeUrl[kg] = "/blog/category/:slug/:page?"
+
+[siteSearchInclude]
 
 [blogPosts]
 pageNumber = "{{ :page }}"
@@ -34,12 +44,12 @@ postPage = "post"
               {% endfor %}
               <div class="post-info">
                 <span class="causes-tag mr-3">
-          {% for cat in post.categories %}
-                    <a href="{{cat.url}}">{{cat.name}}</a>
-                    {%endfor %}
+                  {% for cat in post.categories %}
+                  <a href="{{cat.url}}">{{cat.name}}</a>
+                  {%endfor %}
                 </span>
                 <div class="blog-date-box">
-                  <h4>{{ post.published_at |date('d') }}<br><span>{{ post.published_at |date('M') }}</span></h4>
+                  <h4>{{ post.published_at |date('d') }}<br><span>{{ post.published_at |rudate('%BP')}}</span></h4>
                 </div>
               </div>
             </div>

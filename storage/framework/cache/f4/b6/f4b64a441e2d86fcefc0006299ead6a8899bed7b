@@ -1,4 +1,4 @@
-1614378457a:1:{s:20:"site/banner_mine.htm";a:7:{s:8:"fileName";s:20:"site/banner_mine.htm";s:7:"content";s:2381:"[viewBag]
+1615910857a:1:{s:20:"site/banner_mine.htm";a:7:{s:8:"fileName";s:20:"site/banner_mine.htm";s:7:"content";s:1506:"[viewBag]
 
 [builderList]
 modelClass = "Akmal\Mineslider\Models\MainSlider"
@@ -10,134 +10,68 @@ detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
 ==
-<div class="container-fluid">
-  <div class="banner-slider-5">
-    {% set records = builderList.records %}
-    {% set displayColumn = builderList.displayColumn %}
-    {% set noRecordsMessage = builderList.noRecordsMessage %}
-    {% set detailsPage = builderList.detailsPage %}
-    {% set detailsKeyColumn = builderList.detailsKeyColumn %}
-    {% set detailsUrlParameter = builderList.detailsUrlParameter %}
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
 
 
-    {% for record in records %}
-    <div class="banner-content-style-5">
-      <div class="row">
-        <div class="thumb col-lg-6">
-          <img src="{{record.img.path}}" alt="">
-        </div>
-        <div class="content align-self-center col-lg-5">
-          <h2 class="title" data-animation-in="fadeInLeft">{{record.title}}</h2>
-          <div class="description" data-animation-in="fadeInDown">
-            {{ record.description | raw }}
-          </div>
-          <div class="margin-top-50">
-            <div class="btn-wrapper mr-3" data-animation-in="fadeInDown">
-              <a class="btn btn-custom-default" href="{{record.link}}">Learn More</a>
-            </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 banner-slider-4">
+      {% for record in records %}
+      <div class="banner-content-style-4 text-center">
+        <h2 class="title" data-animation-in="fadeInLeft">{{record.title}}</h2>
+        <div class="description" data-animation-in="fadeInDown">{{ record.description | raw }}</div>
+        <div class="d-flex justify-content-center margin-top-50">
+          <div class="btn-wrapper mr-3" data-animation-in="fadeInDown">
+            <a class="btn btn-custom-default" href="{{record.link}}">{{'Подробнее'|_}}</a>
           </div>
         </div>
       </div>
-    </div>
-    {% endfor %}
-
-  </div>
-</div>
-<div class="banner5-sm-slider">
-  <div class="sm-slider-item">
-    <div class="thumb">
-      <div class="content">
-        <h3>My presentation</h3>
-      </div>
-      <img src="assets/img/banner/8.png" alt="">
-    </div>
-  </div>
-  <div class="sm-slider-item">
-    <div class="thumb">
-      <div class="content">
-        <h3>My presentation</h3>
-      </div>
-      <img src="assets/img/banner/8.png" alt="">
+      {% endfor %}
     </div>
   </div>
 </div>
-<div class="banner5-social">
+<div class="banner4-social">
   <ul>
     {% for item in this.theme.social %}
     <li><a href="{{item.url}}">{{item.social_name}}</a></li>
     {% endfor %}
   </ul>
-</div>
-<div class="controler-wrapper-style-04">
-  <span class="active-controler">01</span>
-  <div class="progressbar">
-    <span class="home-slider-progress"></span>
-    <span class="home-slider-progress-active"></span>
-  </div>
-  <span class="total-controler">04</span>
-</div>";s:5:"mtime";i:1614191216;s:6:"markup";s:2117:"<div class="container-fluid">
-  <div class="banner-slider-5">
-    {% set records = builderList.records %}
-    {% set displayColumn = builderList.displayColumn %}
-    {% set noRecordsMessage = builderList.noRecordsMessage %}
-    {% set detailsPage = builderList.detailsPage %}
-    {% set detailsKeyColumn = builderList.detailsKeyColumn %}
-    {% set detailsUrlParameter = builderList.detailsUrlParameter %}
+</div>";s:5:"mtime";i:1615737046;s:6:"markup";s:1242:"{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
 
 
-    {% for record in records %}
-    <div class="banner-content-style-5">
-      <div class="row">
-        <div class="thumb col-lg-6">
-          <img src="{{record.img.path}}" alt="">
-        </div>
-        <div class="content align-self-center col-lg-5">
-          <h2 class="title" data-animation-in="fadeInLeft">{{record.title}}</h2>
-          <div class="description" data-animation-in="fadeInDown">
-            {{ record.description | raw }}
-          </div>
-          <div class="margin-top-50">
-            <div class="btn-wrapper mr-3" data-animation-in="fadeInDown">
-              <a class="btn btn-custom-default" href="{{record.link}}">Learn More</a>
-            </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 banner-slider-4">
+      {% for record in records %}
+      <div class="banner-content-style-4 text-center">
+        <h2 class="title" data-animation-in="fadeInLeft">{{record.title}}</h2>
+        <div class="description" data-animation-in="fadeInDown">{{ record.description | raw }}</div>
+        <div class="d-flex justify-content-center margin-top-50">
+          <div class="btn-wrapper mr-3" data-animation-in="fadeInDown">
+            <a class="btn btn-custom-default" href="{{record.link}}">{{'Подробнее'|_}}</a>
           </div>
         </div>
       </div>
-    </div>
-    {% endfor %}
-
-  </div>
-</div>
-<div class="banner5-sm-slider">
-  <div class="sm-slider-item">
-    <div class="thumb">
-      <div class="content">
-        <h3>My presentation</h3>
-      </div>
-      <img src="assets/img/banner/8.png" alt="">
-    </div>
-  </div>
-  <div class="sm-slider-item">
-    <div class="thumb">
-      <div class="content">
-        <h3>My presentation</h3>
-      </div>
-      <img src="assets/img/banner/8.png" alt="">
+      {% endfor %}
     </div>
   </div>
 </div>
-<div class="banner5-social">
+<div class="banner4-social">
   <ul>
     {% for item in this.theme.social %}
     <li><a href="{{item.url}}">{{item.social_name}}</a></li>
     {% endfor %}
   </ul>
-</div>
-<div class="controler-wrapper-style-04">
-  <span class="active-controler">01</span>
-  <div class="progressbar">
-    <span class="home-slider-progress"></span>
-    <span class="home-slider-progress-active"></span>
-  </div>
-  <span class="total-controler">04</span>
 </div>";s:4:"code";N;s:7:"viewBag";a:0:{}s:11:"builderList";a:8:{s:10:"modelClass";s:34:"Akmal\Mineslider\Models\MainSlider";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:5:"title";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

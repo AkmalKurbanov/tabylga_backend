@@ -1,0 +1,60 @@
+title = "Событие"
+url = "/event-detail/:slug"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[viewBag]
+localeTitle[ru] = "Событие"
+localeTitle[kg] = "Окуя"
+localeUrl[kg] = "/event-detail/:slug"
+
+[builderDetails]
+modelClass = "Akmal\Events\Models\Event"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "title"
+notFoundMessage = "Record not found"
+
+[siteSearchInclude]
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+<div class="leadership-area margin-top-115">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="leadership-content">
+          <h2>{{record.title}}</h2>
+          {{record.content | raw}}
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 text-center">
+        <div class="ls-date-box">
+          <h4>Дата & {{'Время'|_}}:</h4>
+          <p> {{record.date | date('d')}} {{record.date | rudate('%BP')}} ,
+            {{record.date | date('Y')}} , {{record.date | date('H:i') }}</p>
+          <hr>
+          <h4>{{'Место расположения'|_}}</h4>
+          <p>{{record.location}}</p>
+        </div>
+        <div class="ls-social-share">
+          <script src="https://yastatic.net/share2/share.js"></script>
+          <div class="ya-share2" data-curtain data-shape="round" data-limit="3"
+            data-services="vkontakte,facebook,odnoklassniki,telegram,twitter,whatsapp,skype"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% else %}
+{{ notFoundMessage }}
+{% endif %}

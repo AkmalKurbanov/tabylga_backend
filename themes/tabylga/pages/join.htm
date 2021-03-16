@@ -1,0 +1,71 @@
+title = "Присоединиться"
+url = "/join"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[viewBag]
+localeTitle[ru] = "Присоединиться"
+localeTitle[kg] = "Кошулуу"
+localeUrl[kg] = "/join"
+
+[genericForm genericJoinForm]
+messages_success = "Ваша форма была успешно отправлена!"
+messages_errors = "В вашей заявке содержатся ошибки."
+reset_form = 1
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
+
+[siteSearchInclude]
+
+==
+<div class="politx-content-area padding-top-115">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="section-subtitle">{{'Присоединиться'|_}}</p>
+        <h2 class="title">{{'Присоединиться к партнерству'|_}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+
+        <form class="donate-form" data-request="{{ genericJoinForm }}::onFormSubmit">
+          <div id="{{ genericJoinForm }}_forms_flash"></div>
+          {{ form_token() }}
+          <div class="row">
+            <div class="col">
+              <input type="hidden" class="form-control" id="joinPartners" name="Заявка по партнерству"
+                value="Присоединиться к партнерству">
+              <input type="text" class="form-control" id="name" name="Имя" placeholder="{{'Ваше имя'|_}}" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="email" name="email" placeholder="{{'Ваш email'|_}}"
+                required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" id="number" name="телефон"
+                placeholder="{{'Ваш телефон'|_}}" required>
+            </div>
+            <div class="col">
+              <button class="btn btn-custom-primary" id="simpleContactSubmitButton" type="submit"
+                style="width: 100%; border: 1px solid rgba(4, 51, 129, 0.2)">{{'Отправить'|_}}</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
